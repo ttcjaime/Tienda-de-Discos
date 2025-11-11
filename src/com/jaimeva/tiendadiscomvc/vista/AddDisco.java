@@ -14,6 +14,8 @@ public class AddDisco {
     private JPanel PanelDisco;
     private JPanel PanelArtista;
     private JPanel PanelGenero;
+    private JButton añadirXMLButton;
+    private JButton nuevoButton;
 
     public JFrame ventana;
 
@@ -21,7 +23,7 @@ public class AddDisco {
         ventana = new JFrame("Añadir Discos");
         ventana.setContentPane(panelPrincipal);
         ventana.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
-        ventana.setSize(600, 500);
+        ventana.setSize(1100, 600);
         ventana.setVisible(true);
         ventana.setLocationRelativeTo(null);
     }

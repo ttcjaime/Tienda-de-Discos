@@ -82,6 +82,10 @@
         <rowspec value="center:d:noGrow"/>
         <rowspec value="top:4dlu:noGrow"/>
         <rowspec value="center:max(d;4px):noGrow"/>
+        <rowspec value="top:4dlu:noGrow"/>
+        <rowspec value="center:max(d;4px):noGrow"/>
+        <rowspec value="top:4dlu:noGrow"/>
+        <rowspec value="center:max(d;4px):noGrow"/>
         <colspec value="fill:d:grow"/>
         <constraints border-constraint="Center"/>
         <properties>
@@ -222,8 +226,8 @@
                     <constraints/>
                     <properties>
                       <foreground color="-15789798"/>
-                      <icon value="musica-de-usuario.png"/>
-                      <text value=" Artista del Disco"/>
+                      <icon value="euro.png"/>
+                      <text value=" Precio"/>
                     </properties>
                   </component>
                   <component id="9db8" class="javax.swing.JTextField" default-binding="true">
@@ -246,8 +250,8 @@
                     <constraints/>
                     <properties>
                       <foreground color="-15789798"/>
-                      <icon value="musica-alternativa-24.png"/>
-                      <text value=" Genero Musical"/>
+                      <icon value="tiempo.png"/>
+                      <text value="Tiempo de Reproduccion"/>
                     </properties>
                   </component>
                   <component id="106cc" class="javax.swing.JTextField" default-binding="true">
@@ -255,6 +259,153 @@
                     <properties>
                       <background color="-1647416"/>
                       <columns value="10"/>
+                    </properties>
+                  </component>
+                </children>
+              </grid>
+            </children>
+          </grid>
+          <grid id="c5d7" layout-manager="FlowLayout" hgap="15" vgap="10" flow-align="1">
+            <constraints>
+              <grid row="4" column="0" row-span="1" col-span="1" vsize-policy="3" hsize-policy="3" anchor="0" fill="3" indent="0" use-parent-layout="false"/>
+              <forms/>
+            </constraints>
+            <properties>
+              <background color="-1647416"/>
+            </properties>
+            <border type="line"/>
+            <children>
+              <grid id="3e8bd" layout-manager="FlowLayout" hgap="5" vgap="5" flow-align="0">
+                <constraints/>
+                <properties>
+                  <background color="-1647416"/>
+                </properties>
+                <border type="none"/>
+                <children>
+                  <component id="e018d" class="javax.swing.JLabel">
+                    <constraints/>
+                    <properties>
+                      <foreground color="-15789798"/>
+                      <icon value="formato-de-archivo-de-audio.png"/>
+                      <text value=" Formato de Audio"/>
+                    </properties>
+                  </component>
+                  <component id="9217e" class="javax.swing.JTextField" default-binding="true">
+                    <constraints/>
+                    <properties>
+                      <background color="-1647416"/>
+                      <columns value="10"/>
+                    </properties>
+                  </component>
+                </children>
+              </grid>
+              <grid id="eee33" layout-manager="FlowLayout" hgap="5" vgap="5" flow-align="0">
+                <constraints/>
+                <properties>
+                  <background color="-1647416"/>
+                </properties>
+                <border type="none"/>
+                <children>
+                  <component id="8bd6a" class="javax.swing.JLabel">
+                    <constraints/>
+                    <properties>
+                      <foreground color="-15789798"/>
+                      <icon value="ondas-sonoras.png"/>
+                      <text value=" Canciones"/>
+                    </properties>
+                  </component>
+                  <component id="5f6a6" class="javax.swing.JTextField" default-binding="true">
+                    <constraints/>
+                    <properties>
+                      <background color="-1647416"/>
+                      <columns value="10"/>
+                    </properties>
+                  </component>
+                </children>
+              </grid>
+              <grid id="53f06" layout-manager="FlowLayout" hgap="5" vgap="5" flow-align="0">
+                <constraints/>
+                <properties>
+                  <background color="-1647416"/>
+                </properties>
+                <border type="none"/>
+                <children>
+                  <component id="b2e8d" class="javax.swing.JLabel">
+                    <constraints/>
+                    <properties>
+                      <foreground color="-15789798"/>
+                      <icon value="pantalla-completa.png"/>
+                      <text value=" Capacidad"/>
+                    </properties>
+                  </component>
+                  <component id="4c59f" class="javax.swing.JTextField" default-binding="true">
+                    <constraints/>
+                    <properties>
+                      <background color="-1647416"/>
+                      <columns value="10"/>
+                    </properties>
+                  </component>
+                </children>
+              </grid>
+            </children>
+          </grid>
+          <grid id="be53a" layout-manager="FlowLayout" hgap="15" vgap="10" flow-align="1">
+            <constraints>
+              <grid row="6" column="0" row-span="1" col-span="1" vsize-policy="3" hsize-policy="3" anchor="0" fill="3" indent="0" use-parent-layout="false"/>
+              <forms/>
+            </constraints>
+            <properties>
+              <background color="-1647416"/>
+            </properties>
+            <border type="line"/>
+            <children>
+              <grid id="70be5" layout-manager="FlowLayout" hgap="5" vgap="5" flow-align="0">
+                <constraints/>
+                <properties>
+                  <background color="-1647416"/>
+                </properties>
+                <border type="none"/>
+                <children>
+                  <component id="a75a0" class="javax.swing.JButton" default-binding="true">
+                    <constraints/>
+                    <properties>
+                      <background color="-4942216"/>
+                      <foreground color="-16777216"/>
+                      <text value="Importar XML"/>
+                    </properties>
+                  </component>
+                </children>
+              </grid>
+              <grid id="bf6c9" layout-manager="FlowLayout" hgap="5" vgap="5" flow-align="0">
+                <constraints/>
+                <properties>
+                  <background color="-1647416"/>
+                </properties>
+                <border type="none"/>
+                <children>
+                  <component id="bf470" class="javax.swing.JButton" binding="nuevoButton" default-binding="true">
+                    <constraints/>
+                    <properties>
+                      <background color="-4942216"/>
+                      <foreground color="-16777216"/>
+                      <text value="Nuevo"/>
+                    </properties>
+                  </component>
+                </children>
+              </grid>
+              <grid id="37a6c" layout-manager="FlowLayout" hgap="5" vgap="5" flow-align="0">
+                <constraints/>
+                <properties>
+                  <background color="-1647416"/>
+                </properties>
+                <border type="none"/>
+                <children>
+                  <component id="e991" class="javax.swing.JButton" binding="añadirXMLButton" default-binding="true">
+                    <constraints/>
+                    <properties>
+                      <background color="-4942216"/>
+                      <foreground color="-16777216"/>
+                      <text value="Añadir XML"/>
                     </properties>
                   </component>
                 </children>
