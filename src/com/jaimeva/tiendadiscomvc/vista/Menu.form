@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<form xmlns="http://www.intellij.com/uidesigner/form/" version="1" bind-to-class="com.jaimeva.tiendadiscomvc.vista.Menu">
+  <grid id="27dc6" binding="panelPrincipal" layout-manager="BorderLayout" hgap="0" vgap="0">
+    <constraints>
+      <xy x="20" y="20" width="890" height="939"/>
+    </constraints>
+    <properties/>
+    <border type="none"/>
+    <children>
+      <grid id="904ac" binding="PanelCabecera" layout-manager="FormLayout">
+        <rowspec value="center:d:noGrow"/>
+        <colspec value="fill:d:noGrow"/>
+        <constraints border-constraint="North"/>
+        <properties>
+          <background color="-4942216"/>
+          <preferredSize width="115" height="50"/>
+        </properties>
+        <border type="none"/>
+        <children>
+          <component id="e16c2" class="javax.swing.JLabel">
+            <constraints>
+              <grid row="0" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+              <forms/>
+            </constraints>
+            <properties>
+              <foreground color="-16777216"/>
+              <text value="Tienda de Discos"/>
+            </properties>
+          </component>
+        </children>
+      </grid>
+      <grid id="ebf87" layout-manager="FlowLayout" hgap="30" vgap="170" flow-align="1">
+        <constraints border-constraint="Center"/>
+        <properties>
+          <background color="-1647416"/>
+        </properties>
+        <border type="none"/>
+        <children>
+          <component id="2a84b" class="javax.swing.JButton" binding="btnAddReproductor">
+            <constraints/>
+            <properties>
+              <background color="-7573936"/>
+              <foreground color="-16777216"/>
+              <label value="Añadir Reproductor"/>
+              <preferredSize width="160" height="60"/>
+              <text value="Añadir Reproductor"/>
+            </properties>
+          </component>
+          <component id="ea975" class="javax.swing.JButton" binding="btnVerLista">
+            <constraints/>
+            <properties>
+              <background color="-7573936"/>
+              <foreground color="-16777216"/>
+              <label value="Ver Lista"/>
+              <preferredSize width="160" height="60"/>
+              <text value="Ver Lista"/>
+            </properties>
+          </component>
+          <component id="84b38" class="javax.swing.JButton" binding="btnAddDisco">
+            <constraints/>
+            <properties>
+              <background color="-7573936"/>
+              <foreground color="-16777216"/>
+              <label value="Añadir Disco"/>
+              <preferredSize width="160" height="60"/>
+              <text value="Añadir Disco"/>
+            </properties>
+          </component>
+        </children>
+      </grid>
+    </children>
+  </grid>
+</form>
