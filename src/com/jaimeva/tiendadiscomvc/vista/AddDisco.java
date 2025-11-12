@@ -1,5 +1,7 @@
 package com.jaimeva.tiendadiscomvc.vista;
 
+import com.github.lgooddatepicker.components.DatePicker;
+
 import javax.swing.*;
 
 public class AddDisco {
@@ -9,13 +11,35 @@ public class AddDisco {
     private JRadioButton btnDiscoVinilo;
     private JPanel PanelCabecera;
     private JPanel JPanelCentro;
-    private JTextField textField1;
+    private JTextField txtNombre;
     private JPanel PrimerPanelCentro;
     private JPanel PanelDisco;
     private JPanel PanelArtista;
     private JPanel PanelGenero;
-    private JButton añadirXMLButton;
-    private JButton nuevoButton;
+    private JButton btnAdd;
+    private JButton btnNuevo;
+    private JSpinner spinnerPrecio;
+    private JPanel SegundoPanelCentro;
+    private JPanel TercerPanelCentro;
+    private JPanel CuartoPanelCentro;
+    private JPanel PanelFecha;
+    private JPanel PanelPrecio;
+    private JPanel PanelTiempo;
+    private JPanel PanelFormato;
+    private JPanel PanelCanciones;
+    private JPanel PanelCapacidad;
+    private JPanel PanelImportar;
+    private JPanel PanelNuevo;
+    private JPanel PanelAdd;
+    private JPanel PanelBorrar;
+    private JButton btnImportar;
+    private JButton btnBorrar;
+    private JTextField txtAudio;
+    private JTextField txtCanciones;
+    private JTextField txtCapacidad;
+    private JTextField txtTiempo;
+    private JTextField txtArtista;
+    private JTextField txtGenero;
 
     public JFrame ventana;
 

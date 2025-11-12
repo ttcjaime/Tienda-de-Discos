@@ -6,20 +6,24 @@ import java.util.ArrayList;
 public class Disco {
     public String artista;
     public LocalDate fecha_Lanzamiento;
-    public ArrayList<String> Canciones;
+    public String canciones;
     public String nombre;
     public double tiempoReproduccion;
     public double precio;
     public String generoMusical;
 
-    public Disco(String artista, LocalDate fecha_Lanzamiento, ArrayList<String> canciones, String nombre, double tiempoReproduccion, double precio, String generoMusical) {
+    //falta ArrayList Canciones
+    public Disco(String artista, String nombre, String canciones, double tiempoReproduccion, double precio, String generoMusical) {
         this.artista = artista;
-        this.fecha_Lanzamiento = fecha_Lanzamiento;
-        Canciones = canciones;
+        this.canciones = canciones;
         this.nombre = nombre;
         this.tiempoReproduccion = tiempoReproduccion;
         this.precio = precio;
         this.generoMusical = generoMusical;
+    }
+
+    public Disco() {
+
     }
 
     public String getArtista() {
@@ -30,8 +34,8 @@ public class Disco {
         return fecha_Lanzamiento;
     }
 
-    public ArrayList<String> getCanciones() {
-        return Canciones;
+    public String getCanciones() {
+        return canciones;
     }
 
     public String getNombre() {
@@ -58,8 +62,8 @@ public class Disco {
         this.fecha_Lanzamiento = fecha_Lanzamiento;
     }
 
-    public void setCanciones(ArrayList<String> canciones) {
-        Canciones = canciones;
+    public void setCanciones(String canciones) {
+        canciones = canciones;
     }
 
     public void setNombre(String nombre) {

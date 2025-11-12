@@ -6,13 +6,17 @@ import java.util.ArrayList;
 public class Vinilo extends Disco {
     private int pulgadas;
     private String color;
+    public Vinilo() {
 
-    public Vinilo(String artista, LocalDate fecha_Lanzamiento, ArrayList<String> canciones, String nombre, double tiempoReproduccion, double precio,
+    }
+    public Vinilo(String artista, String nombre, String canciones, double tiempoReproduccion, double precio,
                   String generoMusical, int pulgadas, String color) {
-        super(artista, fecha_Lanzamiento, canciones, nombre, tiempoReproduccion, precio, generoMusical);
+        super(artista, nombre, canciones, tiempoReproduccion, precio, generoMusical);
         this.pulgadas = pulgadas;
         this.color = color;
     }
+
+
 
     public int getPulgadas() {
         return pulgadas;
@@ -28,5 +32,13 @@ public class Vinilo extends Disco {
 
     public void setColor(String color) {
         this.color = color;
+    }
+
+    @Override
+    public String toString() {
+        return super.toString() + "Vinilo{" +
+                "pulgadas=" + pulgadas +
+                ", color='" + color + '\'' +
+                '}';
     }
 }
