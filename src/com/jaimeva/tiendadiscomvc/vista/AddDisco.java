@@ -6,20 +6,15 @@ import com.jaimeva.tiendadiscomvc.base.Disco;
 import javax.swing.*;
 
 public class AddDisco {
+    //paneles
     public JPanel panelPrincipal;
-    public JRadioButton pickDiscoCd;
     public JPanel PanelEleccion;
-    public JRadioButton pickDiscoVinilo;
     public JPanel PanelCabecera;
     public JPanel JPanelCentro;
-    public JTextField txtNombre;
     public JPanel PrimerPanelCentro;
     public JPanel PanelDisco;
     public JPanel PanelArtista;
     public JPanel PanelGenero;
-    public JButton btnExportar;
-    public JButton btnNuevo;
-    public JSpinner spinnerPrecio;
     public JPanel SegundoPanelCentro;
     public JPanel TercerPanelCentro;
     public JPanel CuartoPanelCentro;
@@ -33,23 +28,39 @@ public class AddDisco {
     public JPanel PanelNuevo;
     public JPanel PanelAdd;
     public JPanel PanelBorrar;
-    public JButton btnImportar;
-    public JButton btnBorrar;
+
+    //JRadioButton
+    public JRadioButton pickDiscoCd;
+    public JRadioButton pickDiscoVinilo;
+
+    //JTextField
+    public JTextField txtNombre;
     public JTextField txtModificador1;
     public JTextField txtCanciones;
     public JTextField txtModificador2;
     public JTextField txtTiempo;
     public JTextField txtArtista;
     public JTextField txtGenero;
-    public JList list1;
-    public DatePicker fechaPicker;
+
+    //JLabel
     public JLabel lblModificar1;
     public JLabel lblModificar2;
 
+    //botones
+    public JButton btnExportar;
+    public JButton btnNuevo;
+    public JButton btnImportar;
+    public JButton btnBorrar;
+
+    //spinner
+    private SpinnerNumberModel spinnerModel;
+    public JSpinner spinnerPrecio;
+
+    //demas
+    public JList<Disco> list1;
+    public DatePicker fechaPicker;
     public JFrame ventana;
     public DefaultListModel dlmDisco;
-    public JPanel[] paneles;
-    public JTextField[] modificadores;
 
     public AddDisco() {
         ventana = new JFrame("Añadir Discos");
@@ -58,17 +69,25 @@ public class AddDisco {
         ventana.setSize(1100, 600);
         ventana.setVisible(true);
         ventana.setLocationRelativeTo(null);
-        modificadores = new JTextField [] {txtModificador1, txtModificador2};
-        //paneles = new JPanel{};
+        initComponents();
     }
 
     public void initComponents() {
         dlmDisco = new DefaultListModel<Disco>();
         list1.setModel(dlmDisco);
+        spinnerModel = new SpinnerNumberModel(1,0,500,1);
+        spinnerPrecio.setModel(spinnerModel);
     }
 
     public int getPrecio() {
-        return (int) spinnerPrecio.getValue();
+        Object value = spinnerPrecio.getValue();
+        if (value instanceof Number) {
+            return ((Number) value).intValue();
+        } else {
+            return 0; // o lanzar una excepción
+        }
     }
+
+
 
 }

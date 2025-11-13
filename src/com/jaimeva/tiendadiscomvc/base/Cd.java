@@ -10,8 +10,8 @@ public class Cd extends Disco{
     public Cd() {
 
     }
-    public Cd(String artista,  String nombre, String canciones, double tiempoReproduccion, double precio, String generoMusical, int capacidad, String formatoAudio) {
-        super(artista,  nombre, canciones, tiempoReproduccion, precio, generoMusical);
+    public Cd(String artista, LocalDate fehcha_lanzamiento, String nombre, String canciones, double tiempoReproduccion, int precio, String generoMusical, int capacidad, String formatoAudio) {
+        super(artista, fehcha_lanzamiento,  nombre, canciones, tiempoReproduccion, precio, generoMusical);
         this.capacidad = capacidad;
         this.formatoAudio = formatoAudio;
     }

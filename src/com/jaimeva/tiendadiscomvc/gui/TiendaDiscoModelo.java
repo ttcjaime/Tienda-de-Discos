@@ -30,19 +30,15 @@ public class TiendaDiscoModelo {
     public ArrayList<Disco> obtenerDisco() {return listaDisco;}
     public ArrayList<Reproductor> obtenerReproductor() {return listaReproductor;}
 
-    //alta disco
-    //falta ArrayList
-    public void altaDiscoCD(String artista, String fecha_Lanzamiento, String canciones,  String nombre, double tiempoReproduccion, double precio, String generoMusical,
+    public void altaDiscoCD(String artista, LocalDate fecha_Lanzamiento, String canciones,  String nombre, double tiempoReproduccion, int precio, String generoMusical,
                             int capacidad, String formatoAudio) {
-        Cd cd = new Cd(artista, nombre, canciones, tiempoReproduccion, precio, generoMusical, capacidad, formatoAudio);
-        cd.setFecha_Lanzamiento(LocalDate.parse(fecha_Lanzamiento));
+        Cd cd = new Cd(artista, fecha_Lanzamiento, nombre, canciones, tiempoReproduccion, precio, generoMusical, capacidad, formatoAudio);
         listaDisco.add(cd);
     }
 
-    public void altaDiscoVinilo(String artista, String nombre, String canciones, double tiempoReproduccion, double precio,
-                                String generoMusical, int pulgadas, String color, String fecha_Lanzamiento) {
-        Vinilo vinilo = new Vinilo(artista, nombre, canciones, tiempoReproduccion, precio, generoMusical, pulgadas, color);
-        vinilo.setFecha_Lanzamiento(LocalDate.parse(fecha_Lanzamiento));
+    public void altaDiscoVinilo(String artista, LocalDate fecha_Lanzamiento, String canciones,  String nombre, double tiempoReproduccion, int precio, String generoMusical,
+                                int pulgadas, String color) {
+        Vinilo vinilo = new Vinilo(artista, fecha_Lanzamiento, nombre, canciones, tiempoReproduccion, precio, generoMusical, pulgadas, color);
         listaDisco.add(vinilo);
     }
 

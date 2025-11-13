@@ -9,17 +9,17 @@ public class Disco {
     public String canciones;
     public String nombre;
     public double tiempoReproduccion;
-    public double precio;
+    public int precio;
     public String generoMusical;
 
-    //falta ArrayList Canciones
-    public Disco(String artista, String nombre, String canciones, double tiempoReproduccion, double precio, String generoMusical) {
+    public Disco(String artista, LocalDate fecha_Lanzamiento, String nombre, String canciones, double tiempoReproduccion, int precio, String generoMusical) {
         this.artista = artista;
         this.canciones = canciones;
         this.nombre = nombre;
         this.tiempoReproduccion = tiempoReproduccion;
         this.precio = precio;
         this.generoMusical = generoMusical;
+        this.fecha_Lanzamiento = fecha_Lanzamiento;
     }
 
     public Disco() {
@@ -74,12 +74,25 @@ public class Disco {
         this.tiempoReproduccion = tiempoReproduccion;
     }
 
-    public void setPrecio(double precio) {
+    public void setPrecio(int precio) {
         this.precio = precio;
     }
 
     public void setGeneroMusical(String generoMusical) {
         this.generoMusical = generoMusical;
+    }
+
+    @Override
+    public String toString() {
+        return "Disco{" +
+                "artista='" + artista + '\'' +
+                ", fecha_Lanzamiento=" + fecha_Lanzamiento +
+                ", canciones='" + canciones + '\'' +
+                ", nombre='" + nombre + '\'' +
+                ", tiempoReproduccion=" + tiempoReproduccion +
+                ", precio=" + precio +
+                ", generoMusical='" + generoMusical + '\'' +
+                '}';
     }
 
 }

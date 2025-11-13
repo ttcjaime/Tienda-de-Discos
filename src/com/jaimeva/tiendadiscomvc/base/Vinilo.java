@@ -9,9 +9,9 @@ public class Vinilo extends Disco {
     public Vinilo() {
 
     }
-    public Vinilo(String artista, String nombre, String canciones, double tiempoReproduccion, double precio,
+    public Vinilo(String artista, LocalDate fecha_lanzamiento, String nombre, String canciones, double tiempoReproduccion, int precio,
                   String generoMusical, int pulgadas, String color) {
-        super(artista, nombre, canciones, tiempoReproduccion, precio, generoMusical);
+        super(artista, fecha_lanzamiento, nombre, canciones, tiempoReproduccion, precio, generoMusical);
         this.pulgadas = pulgadas;
         this.color = color;
     }

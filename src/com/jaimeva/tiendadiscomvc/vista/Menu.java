@@ -1,6 +1,8 @@
 package com.jaimeva.tiendadiscomvc.vista;
 
 import com.github.lgooddatepicker.components.DatePicker;
+import com.jaimeva.tiendadiscomvc.gui.TiendaDiscoControlador;
+import com.jaimeva.tiendadiscomvc.gui.TiendaDiscoModelo;
 
 import javax.swing.*;
 import java.awt.event.ActionEvent;
@@ -36,7 +38,8 @@ public class Menu {
                     switch(boton.getText()) {
                         case "Añadir Disco":
                             AddDisco addDisco = new AddDisco();
-                            System.out.println("aaaa");
+                            TiendaDiscoModelo modelo = new TiendaDiscoModelo();
+                            TiendaDiscoControlador controlador = new TiendaDiscoControlador(addDisco, modelo);
                             break;
                         case "Ver Lista":
                             break;

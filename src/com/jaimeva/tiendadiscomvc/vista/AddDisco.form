@@ -22,7 +22,7 @@
               <gridbag weightx="1.0" weighty="1.0"/>
             </constraints>
             <properties>
-              <actionCommand value="Vinilo"/>
+              <actionCommand value="Disco Vinilo"/>
               <background color="-4942216"/>
               <foreground color="-16777216"/>
               <label value="Disco Vinilo"/>
@@ -282,8 +282,8 @@
                     <constraints/>
                     <properties>
                       <foreground color="-15789798"/>
-                      <icon value="formato-de-archivo-de-audio.png"/>
-                      <text value=" Formato de Audio"/>
+                      <icon value="pantalla-completa.png"/>
+                      <text value=" Capacidad"/>
                     </properties>
                   </component>
                   <component id="9217e" class="javax.swing.JTextField" binding="txtModificador1">
@@ -330,8 +330,8 @@
                     <constraints/>
                     <properties>
                       <foreground color="-15789798"/>
-                      <icon value="pantalla-completa.png"/>
-                      <text value=" Capacidad"/>
+                      <icon value="formato-de-archivo-de-audio.png"/>
+                      <text value=" Formato de Audio"/>
                     </properties>
                   </component>
                   <component id="4c59f" class="javax.swing.JTextField" binding="txtModificador2">
@@ -437,7 +437,9 @@
             <children>
               <component id="fc0be" class="javax.swing.JList" binding="list1" default-binding="true">
                 <constraints/>
-                <properties/>
+                <properties>
+                  <selectionBackground color="-16777216"/>
+                </properties>
               </component>
             </children>
           </scrollpane>
