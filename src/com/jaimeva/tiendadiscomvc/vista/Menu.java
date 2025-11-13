@@ -15,6 +15,8 @@ public class Menu {
 
     public JFrame ventana;
 
+    JButton[] botones;
+
     public Menu() {
         ventana = new JFrame("Tienda de discos");
         ventana.setContentPane(panelPrincipal);
@@ -22,6 +24,28 @@ public class Menu {
         ventana.setSize(600, 500);
         ventana.setVisible(true);
         ventana.setLocationRelativeTo(null);
+        botones = new JButton[] {btnAddDisco, btnAddReproductor, btnAddReproductor};
+        boton();
+    }
+
+    public void boton() {
+        for (JButton boton : botones) {
+            boton.addActionListener(new ActionListener() {
+                @Override
+                public void actionPerformed(ActionEvent e) {
+                    switch(boton.getText()) {
+                        case "Añadir Disco":
+                            AddDisco addDisco = new AddDisco();
+                            System.out.println("aaaa");
+                            break;
+                        case "Ver Lista":
+                            break;
+                        case "Añadir Reproductor":
+                            break;
+                    }
+                }
+            });
+        }
     }
 
 }

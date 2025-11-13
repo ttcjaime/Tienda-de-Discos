@@ -2,16 +2,15 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="c4fadcbc-9a1a-4e16-89db-c40bc5ae1ea1" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/TiendaDiscoMVC.iml" beforeDir="false" afterPath="$PROJECT_DIR$/PracticaUD1JaimeMendoza.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/TiendaDiscoMVC/com/jaimeva/tiendadiscomvc/vista/AddDisco.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/TiendaDiscoMVC/com/jaimeva/tiendadiscomvc/vista/AddDisco.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/jaimeva/tiendadiscomvc/base/Cd.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/jaimeva/tiendadiscomvc/base/Cd.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/jaimeva/tiendadiscomvc/base/Disco.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/jaimeva/tiendadiscomvc/base/Disco.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/jaimeva/tiendadiscomvc/Principal.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/jaimeva/tiendadiscomvc/Principal.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/com/jaimeva/tiendadiscomvc/base/Vinilo.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/jaimeva/tiendadiscomvc/base/Vinilo.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/com/jaimeva/tiendadiscomvc/gui/TiendaDiscoControlador.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/jaimeva/tiendadiscomvc/gui/TiendaDiscoControlador.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/jaimeva/tiendadiscomvc/gui/TiendaDiscoModelo.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/jaimeva/tiendadiscomvc/gui/TiendaDiscoModelo.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/com/jaimeva/tiendadiscomvc/vista/AddDisco.form" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/jaimeva/tiendadiscomvc/vista/AddDisco.form" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/com/jaimeva/tiendadiscomvc/vista/AddDisco.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/jaimeva/tiendadiscomvc/vista/AddDisco.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/jaimeva/tiendadiscomvc/vista/Menu.form" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/jaimeva/tiendadiscomvc/vista/Menu.form" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/jaimeva/tiendadiscomvc/vista/Menu.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/jaimeva/tiendadiscomvc/vista/Menu.java" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -117,6 +116,7 @@
       <workItem from="1762968002876" duration="275000" />
       <workItem from="1762968383717" duration="6730000" />
       <workItem from="1762975509613" duration="1278000" />
+      <workItem from="1762986403616" duration="6299000" />
     </task>
     <servers />
   </component>

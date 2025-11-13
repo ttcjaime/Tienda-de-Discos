@@ -16,7 +16,7 @@
           <font/>
         </border>
         <children>
-          <component id="f6c5" class="javax.swing.JRadioButton" binding="btnDiscoVinilo">
+          <component id="f6c5" class="javax.swing.JRadioButton" binding="pickDiscoVinilo">
             <constraints>
               <grid row="0" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
               <gridbag weightx="1.0" weighty="1.0"/>
@@ -29,7 +29,7 @@
               <text value="Disco Vinilo"/>
             </properties>
           </component>
-          <component id="8b32d" class="javax.swing.JRadioButton" binding="btnDiscoCd">
+          <component id="8b32d" class="javax.swing.JRadioButton" binding="pickDiscoCd">
             <constraints>
               <grid row="1" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
               <gridbag weightx="1.0" weighty="1.0"/>
@@ -38,6 +38,7 @@
               <background color="-4942216"/>
               <foreground color="-16777216"/>
               <label value="Disco CD"/>
+              <selected value="true"/>
               <text value="Disco CD"/>
             </properties>
           </component>
@@ -80,8 +81,6 @@
       </grid>
       <grid id="21a6f" binding="JPanelCentro" layout-manager="FormLayout">
         <rowspec value="center:d:noGrow"/>
-        <rowspec value="top:4dlu:noGrow"/>
-        <rowspec value="center:max(d;4px):noGrow"/>
         <rowspec value="top:4dlu:noGrow"/>
         <rowspec value="center:max(d;4px):noGrow"/>
         <rowspec value="top:4dlu:noGrow"/>
@@ -209,7 +208,7 @@
                       <text value="Fecha de Lanzamiento"/>
                     </properties>
                   </component>
-                  <component id="33415" class="com.github.lgooddatepicker.components.DatePicker">
+                  <component id="33415" class="com.github.lgooddatepicker.components.DatePicker" binding="fechaPicker">
                     <constraints/>
                     <properties/>
                   </component>
@@ -279,7 +278,7 @@
                 </properties>
                 <border type="none"/>
                 <children>
-                  <component id="e018d" class="javax.swing.JLabel">
+                  <component id="e018d" class="javax.swing.JLabel" binding="lblModificar1">
                     <constraints/>
                     <properties>
                       <foreground color="-15789798"/>
@@ -287,7 +286,7 @@
                       <text value=" Formato de Audio"/>
                     </properties>
                   </component>
-                  <component id="9217e" class="javax.swing.JTextField" binding="txtAudio">
+                  <component id="9217e" class="javax.swing.JTextField" binding="txtModificador1">
                     <constraints/>
                     <properties>
                       <background color="-1647416"/>
@@ -327,7 +326,7 @@
                 </properties>
                 <border type="none"/>
                 <children>
-                  <component id="b2e8d" class="javax.swing.JLabel">
+                  <component id="b2e8d" class="javax.swing.JLabel" binding="lblModificar2">
                     <constraints/>
                     <properties>
                       <foreground color="-15789798"/>
@@ -335,7 +334,7 @@
                       <text value=" Capacidad"/>
                     </properties>
                   </component>
-                  <component id="4c59f" class="javax.swing.JTextField" binding="txtCapacidad">
+                  <component id="4c59f" class="javax.swing.JTextField" binding="txtModificador2">
                     <constraints/>
                     <properties>
                       <background color="-1647416"/>
@@ -397,12 +396,12 @@
                 </properties>
                 <border type="none"/>
                 <children>
-                  <component id="e991" class="javax.swing.JButton" binding="btnAdd">
+                  <component id="e991" class="javax.swing.JButton" binding="btnExportar">
                     <constraints/>
                     <properties>
                       <background color="-4942216"/>
                       <foreground color="-16777216"/>
-                      <text value="Añadir XML"/>
+                      <text value="Exportar XML"/>
                     </properties>
                   </component>
                 </children>
@@ -426,99 +425,30 @@
               </grid>
             </children>
           </grid>
-          <grid id="92a89" layout-manager="FlowLayout" hgap="15" vgap="10" flow-align="1">
-            <constraints>
-              <grid row="8" column="0" row-span="1" col-span="1" vsize-policy="3" hsize-policy="3" anchor="0" fill="3" indent="0" use-parent-layout="false"/>
-              <forms/>
-            </constraints>
-            <properties>
-              <background color="-1647416"/>
-            </properties>
-            <border type="line"/>
-            <children>
-              <grid id="8d747" layout-manager="FlowLayout" hgap="5" vgap="5" flow-align="0">
-                <constraints/>
-                <properties>
-                  <background color="-1647416"/>
-                </properties>
-                <border type="none"/>
-                <children>
-                  <component id="3e559" class="javax.swing.JButton">
-                    <constraints/>
-                    <properties>
-                      <background color="-4942216"/>
-                      <foreground color="-16777216"/>
-                      <text value="Importar XML"/>
-                    </properties>
-                  </component>
-                </children>
-              </grid>
-              <grid id="9dd9e" layout-manager="FlowLayout" hgap="5" vgap="5" flow-align="0">
-                <constraints/>
-                <properties>
-                  <background color="-1647416"/>
-                </properties>
-                <border type="none"/>
-                <children>
-                  <component id="2a8d5" class="javax.swing.JButton">
-                    <constraints/>
-                    <properties>
-                      <background color="-4942216"/>
-                      <foreground color="-16777216"/>
-                      <text value="Nuevo"/>
-                    </properties>
-                  </component>
-                </children>
-              </grid>
-              <grid id="c73dd" layout-manager="FlowLayout" hgap="5" vgap="5" flow-align="0">
-                <constraints/>
-                <properties>
-                  <background color="-1647416"/>
-                </properties>
-                <border type="none"/>
-                <children>
-                  <component id="a4221" class="javax.swing.JButton">
-                    <constraints/>
-                    <properties>
-                      <background color="-4942216"/>
-                      <foreground color="-16777216"/>
-                      <text value="Añadir XML"/>
-                    </properties>
-                  </component>
-                </children>
-              </grid>
-              <grid id="9b268" layout-manager="FlowLayout" hgap="5" vgap="5" flow-align="0">
-                <constraints/>
-                <properties>
-                  <background color="-1647416"/>
-                </properties>
-                <border type="none"/>
-                <children>
-                  <component id="63b2a" class="javax.swing.JButton">
-                    <constraints/>
-                    <properties>
-                      <background color="-4942216"/>
-                      <foreground color="-16777216"/>
-                      <text value="Borrar"/>
-                    </properties>
-                  </component>
-                </children>
-              </grid>
-            </children>
-          </grid>
           <scrollpane id="ba279">
             <constraints>
-              <grid row="10" column="0" row-span="1" col-span="1" vsize-policy="7" hsize-policy="7" anchor="0" fill="3" indent="0" use-parent-layout="false"/>
+              <grid row="8" column="0" row-span="1" col-span="1" vsize-policy="7" hsize-policy="7" anchor="0" fill="3" indent="0" use-parent-layout="false"/>
               <forms defaultalign-horz="false" defaultalign-vert="false"/>
             </constraints>
             <properties>
               <background color="-4942216"/>
             </properties>
             <border type="none"/>
-            <children/>
+            <children>
+              <component id="fc0be" class="javax.swing.JList" binding="list1" default-binding="true">
+                <constraints/>
+                <properties/>
+              </component>
+            </children>
           </scrollpane>
         </children>
       </grid>
     </children>
   </grid>
+  <buttonGroups>
+    <group name="buttonGroup1">
+      <member id="f6c5"/>
+      <member id="8b32d"/>
+    </group>
+  </buttonGroups>
 </form>

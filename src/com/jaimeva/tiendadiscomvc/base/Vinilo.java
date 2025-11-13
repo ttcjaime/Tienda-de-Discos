@@ -16,8 +16,6 @@ public class Vinilo extends Disco {
         this.color = color;
     }
 
-
-
     public int getPulgadas() {
         return pulgadas;
     }
