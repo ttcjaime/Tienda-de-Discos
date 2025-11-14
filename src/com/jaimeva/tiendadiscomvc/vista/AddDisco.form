@@ -54,11 +54,7 @@
           </component>
         </children>
       </grid>
-      <grid id="b2a94" binding="PanelCabecera" layout-manager="FormLayout">
-        <rowspec value="center:d:grow"/>
-        <rowspec value="top:4dlu:noGrow"/>
-        <rowspec value="center:max(d;4px):noGrow"/>
-        <colspec value="fill:d:grow"/>
+      <grid id="b2a94" binding="PanelCabecera" layout-manager="FlowLayout" hgap="5" vgap="5" flow-align="1">
         <constraints border-constraint="North"/>
         <properties>
           <background color="-4942216"/>
@@ -68,10 +64,7 @@
         <border type="line"/>
         <children>
           <component id="6ea71" class="javax.swing.JLabel">
-            <constraints>
-              <grid row="2" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
-              <forms/>
-            </constraints>
+            <constraints/>
             <properties>
               <foreground color="-16777216"/>
               <text value="Tienda de Disco"/>
@@ -355,6 +348,23 @@
             </properties>
             <border type="line"/>
             <children>
+              <grid id="77ef9" binding="panelVolver" layout-manager="FlowLayout" hgap="5" vgap="5" flow-align="0">
+                <constraints/>
+                <properties>
+                  <background color="-1647416"/>
+                </properties>
+                <border type="none"/>
+                <children>
+                  <component id="c027a" class="javax.swing.JButton" binding="btnVolver">
+                    <constraints/>
+                    <properties>
+                      <background color="-4942216"/>
+                      <foreground color="-16777216"/>
+                      <text value="Volver"/>
+                    </properties>
+                  </component>
+                </children>
+              </grid>
               <grid id="70be5" binding="PanelImportar" layout-manager="FlowLayout" hgap="5" vgap="5" flow-align="0">
                 <constraints/>
                 <properties>

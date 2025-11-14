@@ -36,9 +36,6 @@ public class Cd extends Disco{
 
     @Override
     public String toString() {
-        return super.toString() + "Cd{" +
-                "capacidad=" + capacidad +
-                ", formatoAudio='" + formatoAudio + '\'' +
-                '}';
+        return super.toString() + " | Capacidad: " + capacidad + " | Formato de Audio: " + formatoAudio;
     }
 }

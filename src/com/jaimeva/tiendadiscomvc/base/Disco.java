@@ -46,7 +46,7 @@ public class Disco {
         return tiempoReproduccion;
     }
 
-    public double getPrecio() {
+    public int getPrecio() {
         return precio;
     }
 
@@ -63,7 +63,7 @@ public class Disco {
     }
 
     public void setCanciones(String canciones) {
-        canciones = canciones;
+        this.canciones = canciones;
     }
 
     public void setNombre(String nombre) {
@@ -84,15 +84,13 @@ public class Disco {
 
     @Override
     public String toString() {
-        return "Disco{" +
-                "artista='" + artista + '\'' +
-                ", fecha_Lanzamiento=" + fecha_Lanzamiento +
-                ", canciones='" + canciones + '\'' +
-                ", nombre='" + nombre + '\'' +
-                ", tiempoReproduccion=" + tiempoReproduccion +
-                ", precio=" + precio +
-                ", generoMusical='" + generoMusical + '\'' +
-                '}';
+        return "Artista: " + artista +
+                " | Fecha de Lanzamiento: " + fecha_Lanzamiento +
+                " | Canciones: " + canciones +
+                " | Nombre: " + nombre +
+                " | Tiempo de Reproduccion: " + tiempoReproduccion +
+                " | Precio: " + precio +
+                " | Genero Musical: " + generoMusical;
     }
 
 }

@@ -5,10 +5,13 @@ import com.jaimeva.tiendadiscomvc.base.Disco;
 import com.jaimeva.tiendadiscomvc.base.Vinilo;
 import com.jaimeva.tiendadiscomvc.util.Util;
 import com.jaimeva.tiendadiscomvc.vista.AddDisco;
+import org.xml.sax.SAXException;
 
 import javax.swing.*;
 import javax.swing.event.ListSelectionEvent;
 import javax.swing.event.ListSelectionListener;
+import javax.xml.parsers.ParserConfigurationException;
+import javax.xml.transform.TransformerException;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 import java.awt.event.WindowEvent;
@@ -23,7 +26,7 @@ public class TiendaDiscoControlador implements ActionListener, ListSelectionList
 
     private AddDisco addDisco;
     private TiendaDiscoModelo modelo;
-    private File ultimaRutaExportacion;
+    private File ultimaRutaSeleccionada;
     private String camposVacios;
 
     public TiendaDiscoControlador(AddDisco addDisco, TiendaDiscoModelo modelo) {
@@ -32,6 +35,11 @@ public class TiendaDiscoControlador implements ActionListener, ListSelectionList
 
         addActionListener(this);
         addListaSeleccionListener(this);
+        addWindowListener(this);
+
+        cargarDatosConfiguracion();
+
+
     }
 
     private String camposVacios() {
@@ -95,6 +103,10 @@ public class TiendaDiscoControlador implements ActionListener, ListSelectionList
         addDisco.btnBorrar.addActionListener(listener);
     }
 
+    private void addWindowListener(WindowListener listener) {
+        addDisco.ventana.addWindowListener(listener);
+    }
+
     private void addListaSeleccionListener(ListSelectionListener listener) {
         addDisco.list1.addListSelectionListener(listener);
     }
@@ -107,21 +119,24 @@ public class TiendaDiscoControlador implements ActionListener, ListSelectionList
         }
     }
 
-    private void cargarDatosConfiguracion() throws IOException {
-        Properties configuracion = new Properties(); //coge ruta por defecto y directorio por defecto
-        configuracion.load(new FileReader("vehiculos.comf"));
-        ultimaRutaExportacion = new File(configuracion.getProperty("ultimaRutaExportada"));
-    }
+    private void cargarDatosConfiguracion() {
 
-    private void actualizarDatosConfiguracion(File ultimaRutaExportacion) {
-        this.ultimaRutaExportacion = ultimaRutaExportacion;
-    }
-
-    private void guardaConfiguracion() throws IOException {
         Properties configuracion = new Properties();
-        configuracion.setProperty("ultimaRutaExporacion", ultimaRutaExportacion.getAbsolutePath());
-        configuracion.store(new PrintWriter("vehiculos.conf"),"Datos configuracion vehiculo");
+
+        try {
+            configuracion.load(new FileReader("disco.conf"));
+            ultimaRutaSeleccionada = new File(configuracion.getProperty("ultimaRutaSeleccionada"));
+        } catch (IOException e) {
+            ultimaRutaSeleccionada = new File(System.getProperty("user.home"));
+        }
+
     }
+
+    private void actualizarDatosConfiguracion(File ultimaRutaExportada) {
+        this.ultimaRutaSeleccionada = ultimaRutaExportada;
+    }
+
+
 
     @Override
     public void actionPerformed(ActionEvent e) {
@@ -130,6 +145,10 @@ public class TiendaDiscoControlador implements ActionListener, ListSelectionList
             case "Nuevo":
                 if (algunCampoVacio()) {
                     Util.errorMensaje(camposVacios());
+                    break;
+                }
+                if (modelo.existeDisco(addDisco.txtNombre.getText(), addDisco.txtArtista.getText())) {
+                    Util.errorMensaje("Ya existe un disco con el nombre " + addDisco.txtNombre.getText() + "\n del artista " + addDisco.txtArtista.getText());
                     break;
                 }
                 try {
@@ -149,6 +168,40 @@ public class TiendaDiscoControlador implements ActionListener, ListSelectionList
                     Util.errorMensaje("Introduce un número correcto");
                 }
                 break;
+            case "Importar XML":
+                JFileChooser selectorFichero = Util.crearSelectorFichero(ultimaRutaSeleccionada, "Archivos XML", "xml");
+                int opt = selectorFichero.showOpenDialog(null);
+                if (opt == JFileChooser.APPROVE_OPTION) {
+                    try {
+                        modelo.importarXML(selectorFichero.getSelectedFile());
+                    } catch (ParserConfigurationException ex) {
+                        ex.printStackTrace();
+                    } catch (IOException ex) {
+                        ex.printStackTrace();
+                    } catch (SAXException ex) {
+                        ex.printStackTrace();
+                    } catch (NumberFormatException nfe) {
+                        Util.errorMensaje("No se puede cargar un XML con un formato de numeros incorrecto");
+                    }
+                    refrescar();
+                }
+                break;
+            case "Exportar XML":
+                JFileChooser selectorFichero2 = Util.crearSelectorFichero(ultimaRutaSeleccionada, "Archivos XML", "xml");
+                int opt2 = selectorFichero2.showSaveDialog(null);
+                if (opt2 == JFileChooser.APPROVE_OPTION) {
+                    try {
+                        modelo.exportarXML(selectorFichero2.getSelectedFile());
+                    } catch (ParserConfigurationException ex) {
+                        ex.printStackTrace();
+                    } catch (TransformerException ex) {
+                        ex.printStackTrace();
+                    }
+                }
+                break;
+            case "Volver":
+
+                break;
             case "Disco CD":
                 addDisco.lblModificar1.setText("Capacidad");
                 addDisco.lblModificar2.setText("Formato de Audio");
@@ -157,20 +210,22 @@ public class TiendaDiscoControlador implements ActionListener, ListSelectionList
                 addDisco.lblModificar1.setText("Pulgadas");
                 addDisco.lblModificar2.setText("Color");
                 break;
+            case "Borrar":
+
+                break;
         }
     }
 
     @Override
     public void valueChanged(ListSelectionEvent e) {
         if (e.getValueIsAdjusting()) {
-            //String artista, LocalDate fecha_Lanzamiento, String nombre,
-            // String canciones, double tiempoReproduccion, double precio, String generoMusical
+            //String artista, LocalDate fecha_Lanzamiento, String nombre, String canciones, double tiempoReproduccion, int precio, String generoMusical
             Disco disco  = addDisco.list1.getSelectedValue();
             addDisco.txtArtista.setText(disco.getArtista());
+            addDisco.fechaPicker.setDate(disco.getFecha_Lanzamiento());
             addDisco.txtNombre.setText(disco.getNombre());
-            addDisco.txtTiempo.setText(disco.getTiempoReproduccion() + "");
-            addDisco.txtGenero.setText(disco.getNombre());
             addDisco.txtCanciones.setText(disco.getCanciones());
+            addDisco.txtTiempo.setText(disco.getTiempoReproduccion() + "");
             addDisco.spinnerPrecio.setValue(disco.getPrecio());
             addDisco.txtGenero.setText(disco.getGeneroMusical());
             if (disco instanceof Cd) {
@@ -185,14 +240,28 @@ public class TiendaDiscoControlador implements ActionListener, ListSelectionList
         }
     }
 
- //no usar
-    @Override
-    public void windowOpened(WindowEvent e) {
-
-    }
-
     @Override
     public void windowClosing(WindowEvent e) {
+        int resp = Util.mensajeConfirmacion("¿Desea cerrar la ventana?", "Salir");
+        if (resp == JOptionPane.OK_OPTION) {
+            guardarConfiguracion();
+            System.exit(0);
+        }
+    }
+
+    private void guardarConfiguracion() {
+        Properties configuracion = new Properties();
+        configuracion.setProperty("ultimaRutaSeleccionada", ultimaRutaSeleccionada.getAbsolutePath());
+        try {
+            configuracion.store(new PrintWriter("discos.conf"), "Datos configuracion Disco");
+        } catch (IOException e) {
+            System.out.println();
+        }
+    }
+
+    //no usar
+    @Override
+    public void windowOpened(WindowEvent e) {
 
     }
 

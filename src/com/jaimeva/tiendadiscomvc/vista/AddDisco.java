@@ -59,13 +59,15 @@ public class AddDisco {
     //demas
     public JList<Disco> list1;
     public DatePicker fechaPicker;
+    public JPanel panelVolver;
+    public JButton btnVolver;
     public JFrame ventana;
     public DefaultListModel dlmDisco;
 
     public AddDisco() {
         ventana = new JFrame("Añadir Discos");
         ventana.setContentPane(panelPrincipal);
-        ventana.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+        ventana.setDefaultCloseOperation(JFrame.DO_NOTHING_ON_CLOSE);
         ventana.setSize(1100, 600);
         ventana.setVisible(true);
         ventana.setLocationRelativeTo(null);
