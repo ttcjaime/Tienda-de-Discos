@@ -18,11 +18,11 @@ import java.io.IOException;
 import java.time.LocalDate;
 import java.util.ArrayList;
 
-public class TiendaDiscoModelo {
+public class DiscoModelo {
     private ArrayList<Disco> listaDisco;
     public ArrayList<Reproductor> listaReproductor;
 
-    public TiendaDiscoModelo() {
+    public DiscoModelo() {
         listaDisco = new ArrayList<>();
         listaReproductor = new ArrayList<>();
     }

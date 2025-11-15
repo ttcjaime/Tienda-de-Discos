@@ -1,0 +1,359 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<form xmlns="http://www.intellij.com/uidesigner/form/" version="1" bind-to-class="com.jaimeva.tiendadiscomvc.vista.AddReproductor">
+  <grid id="27dc6" layout-manager="BorderLayout" hgap="0" vgap="0">
+    <constraints>
+      <xy x="20" y="20" width="1203" height="400"/>
+    </constraints>
+    <properties/>
+    <border type="none"/>
+    <children>
+      <grid id="f64cf" binding="panelPrincipal" layout-manager="BorderLayout" hgap="0" vgap="0">
+        <constraints border-constraint="Center"/>
+        <properties/>
+        <border type="none"/>
+        <children>
+          <grid id="9b07a" binding="PanelEleccion" layout-manager="GridBagLayout">
+            <constraints border-constraint="West"/>
+            <properties>
+              <background color="-4942216"/>
+            </properties>
+            <border type="line">
+              <font/>
+            </border>
+            <children>
+              <component id="9664d" class="javax.swing.JRadioButton" binding="pickDiscoCd">
+                <constraints>
+                  <grid row="1" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+                  <gridbag weightx="1.0" weighty="1.0"/>
+                </constraints>
+                <properties>
+                  <background color="-4942216"/>
+                  <foreground color="-16777216"/>
+                  <label value="Reproductor CD"/>
+                  <selected value="true"/>
+                  <text value="Reproductor CD"/>
+                </properties>
+              </component>
+              <component id="51c0d" class="javax.swing.JLabel">
+                <constraints>
+                  <grid row="0" column="1" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+                  <gridbag weightx="0.0" weighty="0.0"/>
+                </constraints>
+                <properties>
+                  <foreground color="-4942216"/>
+                  <text value="..."/>
+                </properties>
+              </component>
+              <component id="d5b32" class="javax.swing.JRadioButton" binding="pickReproductorVinilo">
+                <constraints>
+                  <grid row="0" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+                  <gridbag weightx="1.0" weighty="1.0"/>
+                </constraints>
+                <properties>
+                  <actionCommand value="Reproductor Vinilo"/>
+                  <background color="-4942216"/>
+                  <foreground color="-16777216"/>
+                  <label value="Reproductor Vinilo"/>
+                  <text value="Reproductor Vinilo"/>
+                </properties>
+              </component>
+            </children>
+          </grid>
+          <grid id="41282" binding="PanelCabecera" layout-manager="FlowLayout" hgap="5" vgap="5" flow-align="1">
+            <constraints border-constraint="North"/>
+            <properties>
+              <background color="-4942216"/>
+              <foreground color="-16777216"/>
+              <preferredSize width="108" height="33"/>
+            </properties>
+            <border type="line"/>
+            <children>
+              <component id="f748c" class="javax.swing.JLabel">
+                <constraints/>
+                <properties>
+                  <foreground color="-16777216"/>
+                  <text value="Tienda de Disco"/>
+                </properties>
+              </component>
+            </children>
+          </grid>
+          <grid id="c4cea" binding="JPanelCentro" layout-manager="FormLayout">
+            <rowspec value="center:d:noGrow"/>
+            <rowspec value="top:4dlu:noGrow"/>
+            <rowspec value="center:max(d;4px):noGrow"/>
+            <rowspec value="top:4dlu:noGrow"/>
+            <rowspec value="center:max(d;4px):noGrow"/>
+            <rowspec value="top:4dlu:noGrow"/>
+            <rowspec value="center:d:grow"/>
+            <colspec value="fill:d:grow"/>
+            <constraints border-constraint="Center"/>
+            <properties>
+              <background color="-1647416"/>
+              <preferredSize width="21" height="7"/>
+            </properties>
+            <border type="none"/>
+            <children>
+              <grid id="bd352" binding="PrimerPanelCentro" layout-manager="FlowLayout" hgap="15" vgap="10" flow-align="1">
+                <constraints>
+                  <grid row="0" column="0" row-span="1" col-span="1" vsize-policy="3" hsize-policy="3" anchor="0" fill="3" indent="0" use-parent-layout="false"/>
+                  <forms/>
+                </constraints>
+                <properties>
+                  <background color="-1647416"/>
+                </properties>
+                <border type="line"/>
+                <children>
+                  <grid id="9f796" binding="PanelDisco" layout-manager="FlowLayout" hgap="5" vgap="5" flow-align="0">
+                    <constraints/>
+                    <properties>
+                      <background color="-1647416"/>
+                    </properties>
+                    <border type="none"/>
+                    <children>
+                      <component id="2cce5" class="javax.swing.JLabel">
+                        <constraints/>
+                        <properties>
+                          <foreground color="-15789798"/>
+                          <icon value="paleta-de-color.png"/>
+                          <name value=""/>
+                          <text value="  Color"/>
+                        </properties>
+                      </component>
+                      <component id="12919" class="javax.swing.JTextField" binding="txtColor">
+                        <constraints/>
+                        <properties>
+                          <background color="-1647416"/>
+                          <columns value="10"/>
+                        </properties>
+                      </component>
+                    </children>
+                  </grid>
+                  <grid id="1495d" binding="PanelArtista" layout-manager="FlowLayout" hgap="5" vgap="5" flow-align="0">
+                    <constraints/>
+                    <properties>
+                      <background color="-1647416"/>
+                    </properties>
+                    <border type="none"/>
+                    <children>
+                      <component id="9c238" class="javax.swing.JLabel">
+                        <constraints/>
+                        <properties>
+                          <foreground color="-15789798"/>
+                          <icon value="material.png"/>
+                          <text value="  Material de Caja"/>
+                        </properties>
+                      </component>
+                      <component id="47f2" class="javax.swing.JTextField" binding="txtMaterial">
+                        <constraints/>
+                        <properties>
+                          <background color="-1647416"/>
+                          <columns value="10"/>
+                        </properties>
+                      </component>
+                    </children>
+                  </grid>
+                  <grid id="b8087" binding="PanelGenero" layout-manager="FlowLayout" hgap="5" vgap="5" flow-align="0">
+                    <constraints/>
+                    <properties>
+                      <background color="-1647416"/>
+                    </properties>
+                    <border type="none"/>
+                    <children>
+                      <component id="2462" class="javax.swing.JLabel">
+                        <constraints/>
+                        <properties>
+                          <foreground color="-15789798"/>
+                          <icon value="bluetooth.png"/>
+                          <text value="  Bluetooth"/>
+                        </properties>
+                      </component>
+                      <component id="3c679" class="javax.swing.JTextField" binding="txtBluetooth">
+                        <constraints/>
+                        <properties>
+                          <background color="-1647416"/>
+                          <columns value="10"/>
+                        </properties>
+                      </component>
+                    </children>
+                  </grid>
+                </children>
+              </grid>
+              <grid id="9a64f" binding="SegundoPanelCentro" layout-manager="FlowLayout" hgap="15" vgap="10" flow-align="1">
+                <constraints>
+                  <grid row="2" column="0" row-span="1" col-span="1" vsize-policy="3" hsize-policy="3" anchor="0" fill="3" indent="0" use-parent-layout="false"/>
+                  <forms/>
+                </constraints>
+                <properties>
+                  <background color="-1647416"/>
+                </properties>
+                <border type="line"/>
+                <children>
+                  <grid id="d775f" binding="PanelPrecio" layout-manager="FlowLayout" hgap="5" vgap="5" flow-align="0">
+                    <constraints/>
+                    <properties>
+                      <background color="-1647416"/>
+                    </properties>
+                    <border type="none"/>
+                    <children>
+                      <component id="4b7c6" class="javax.swing.JLabel">
+                        <constraints/>
+                        <properties>
+                          <foreground color="-15789798"/>
+                          <icon value="usb.png"/>
+                          <text value=" Puertos USB"/>
+                        </properties>
+                      </component>
+                      <component id="51730" class="javax.swing.JSpinner" binding="spinnerPuertos">
+                        <constraints/>
+                        <properties/>
+                      </component>
+                    </children>
+                  </grid>
+                  <grid id="1095d" binding="PanelCapacidad" layout-manager="FlowLayout" hgap="5" vgap="5" flow-align="0">
+                    <constraints/>
+                    <properties>
+                      <background color="-1647416"/>
+                    </properties>
+                    <border type="none"/>
+                    <children>
+                      <component id="badae" class="javax.swing.JLabel" binding="lblModificar1">
+                        <constraints/>
+                        <properties>
+                          <foreground color="-15789798"/>
+                          <icon value="formato-de-archivo-de-audio.png"/>
+                          <text value=" Formato de Audio"/>
+                        </properties>
+                      </component>
+                      <component id="f5f3b" class="javax.swing.JTextField" binding="txtModificador1">
+                        <constraints/>
+                        <properties>
+                          <background color="-1647416"/>
+                          <columns value="10"/>
+                        </properties>
+                      </component>
+                    </children>
+                  </grid>
+                </children>
+              </grid>
+              <grid id="aa134" binding="TercerPanelCentro" layout-manager="FlowLayout" hgap="15" vgap="10" flow-align="1">
+                <constraints>
+                  <grid row="4" column="0" row-span="1" col-span="1" vsize-policy="3" hsize-policy="3" anchor="0" fill="3" indent="0" use-parent-layout="false"/>
+                  <forms/>
+                </constraints>
+                <properties>
+                  <background color="-1647416"/>
+                </properties>
+                <border type="line"/>
+                <children>
+                  <grid id="f85e" binding="panelVolver" layout-manager="FlowLayout" hgap="5" vgap="5" flow-align="0">
+                    <constraints/>
+                    <properties>
+                      <background color="-1647416"/>
+                    </properties>
+                    <border type="none"/>
+                    <children>
+                      <component id="f3069" class="javax.swing.JButton" binding="btnVolver">
+                        <constraints/>
+                        <properties>
+                          <background color="-4942216"/>
+                          <foreground color="-16777216"/>
+                          <text value="Volver"/>
+                        </properties>
+                      </component>
+                    </children>
+                  </grid>
+                  <grid id="74d7a" binding="PanelImportar" layout-manager="FlowLayout" hgap="5" vgap="5" flow-align="0">
+                    <constraints/>
+                    <properties>
+                      <background color="-1647416"/>
+                    </properties>
+                    <border type="none"/>
+                    <children>
+                      <component id="cb21" class="javax.swing.JButton" binding="btnImportar">
+                        <constraints/>
+                        <properties>
+                          <background color="-4942216"/>
+                          <foreground color="-16777216"/>
+                          <text value="Importar XML"/>
+                        </properties>
+                      </component>
+                    </children>
+                  </grid>
+                  <grid id="c38ef" binding="PanelNuevo" layout-manager="FlowLayout" hgap="5" vgap="5" flow-align="0">
+                    <constraints/>
+                    <properties>
+                      <background color="-1647416"/>
+                    </properties>
+                    <border type="none"/>
+                    <children>
+                      <component id="d3eea" class="javax.swing.JButton" binding="btnNuevo">
+                        <constraints/>
+                        <properties>
+                          <background color="-4942216"/>
+                          <foreground color="-16777216"/>
+                          <text value="Nuevo"/>
+                        </properties>
+                      </component>
+                    </children>
+                  </grid>
+                  <grid id="c9c0e" binding="PanelAdd" layout-manager="FlowLayout" hgap="5" vgap="5" flow-align="0">
+                    <constraints/>
+                    <properties>
+                      <background color="-1647416"/>
+                    </properties>
+                    <border type="none"/>
+                    <children>
+                      <component id="742f0" class="javax.swing.JButton" binding="btnExportar">
+                        <constraints/>
+                        <properties>
+                          <background color="-4942216"/>
+                          <foreground color="-16777216"/>
+                          <text value="Exportar XML"/>
+                        </properties>
+                      </component>
+                    </children>
+                  </grid>
+                  <grid id="7dd63" binding="PanelBorrar" layout-manager="FlowLayout" hgap="5" vgap="5" flow-align="0">
+                    <constraints/>
+                    <properties>
+                      <background color="-1647416"/>
+                    </properties>
+                    <border type="none"/>
+                    <children>
+                      <component id="b98c6" class="javax.swing.JButton" binding="btnBorrar">
+                        <constraints/>
+                        <properties>
+                          <background color="-4942216"/>
+                          <foreground color="-16777216"/>
+                          <text value="Borrar"/>
+                        </properties>
+                      </component>
+                    </children>
+                  </grid>
+                </children>
+              </grid>
+              <scrollpane id="aa5be">
+                <constraints>
+                  <grid row="6" column="0" row-span="1" col-span="1" vsize-policy="7" hsize-policy="7" anchor="0" fill="3" indent="0" use-parent-layout="false"/>
+                  <forms defaultalign-horz="false" defaultalign-vert="false"/>
+                </constraints>
+                <properties>
+                  <background color="-4942216"/>
+                </properties>
+                <border type="none"/>
+                <children>
+                  <component id="47c22" class="javax.swing.JList" binding="list1" default-binding="true">
+                    <constraints/>
+                    <properties>
+                      <selectionBackground color="-16777216"/>
+                    </properties>
+                  </component>
+                </children>
+              </scrollpane>
+            </children>
+          </grid>
+        </children>
+      </grid>
+    </children>
+  </grid>
+</form>

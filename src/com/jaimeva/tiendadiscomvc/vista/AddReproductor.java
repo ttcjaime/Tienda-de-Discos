@@ -5,71 +5,47 @@ import com.jaimeva.tiendadiscomvc.base.Disco;
 
 import javax.swing.*;
 
-public class AddDisco {
-    //paneles
+public class AddReproductor {
     public JPanel panelPrincipal;
     public JPanel PanelEleccion;
+    public JRadioButton pickReproductorVinilo;
+    public JRadioButton pickDiscoCd;
     public JPanel PanelCabecera;
     public JPanel JPanelCentro;
     public JPanel PrimerPanelCentro;
     public JPanel PanelDisco;
+    public JTextField txtColor;
     public JPanel PanelArtista;
+    public JTextField txtMaterial;
     public JPanel PanelGenero;
+    public JTextField txtBluetooth;
     public JPanel SegundoPanelCentro;
-    public JPanel TercerPanelCentro;
-    public JPanel CuartoPanelCentro;
-    public JPanel PanelFecha;
     public JPanel PanelPrecio;
-    public JPanel PanelTiempo;
-    public JPanel PanelFormato;
-    public JPanel PanelCanciones;
+    public JSpinner spinnerPuertos;
+    public JPanel TercerPanelCentro;
     public JPanel PanelCapacidad;
-    public JPanel PanelImportar;
-    public JPanel PanelNuevo;
-    public JPanel PanelAdd;
-    public JPanel PanelBorrar;
+    public JLabel lblModificar1;
+    public JTextField txtModificador1;
     public JPanel panelVolver;
     public JButton btnVolver;
-
-    //JRadioButton
-    public JRadioButton pickDiscoCd;
-    public JRadioButton pickDiscoVinilo;
-
-    //JTextField
-    public JTextField txtNombre;
-    public JTextField txtModificador1;
-    public JTextField txtCanciones;
-    public JTextField txtModificador2;
-    public JTextField txtTiempo;
-    public JTextField txtArtista;
-    public JTextField txtGenero;
-
-    //JLabel
-    public JLabel lblModificar1;
-    public JLabel lblModificar2;
-
-    //botones
-    public JButton btnExportar;
-    public JButton btnNuevo;
+    public JPanel PanelImportar;
     public JButton btnImportar;
+    public JPanel PanelNuevo;
+    public JButton btnNuevo;
+    public JPanel PanelAdd;
+    public JButton btnExportar;
+    public JPanel PanelBorrar;
     public JButton btnBorrar;
+    public JList list1;
 
-    //spinner
     private SpinnerNumberModel spinnerModel;
-    public JSpinner spinnerPrecio;
 
-    //demas
-    public JList<Disco> list1;
-    public DatePicker fechaPicker;
-
-    //hechos por mi
     public JFrame ventana;
-    public DefaultListModel dlmDisco;
+    public DefaultListModel dlmReproductor;
     public Menu menu;
 
-
-    public AddDisco() {
-        ventana = new JFrame("Añadir Discos");
+    public AddReproductor() {
+        ventana = new JFrame("Añadir Reproductores");
         ventana.setContentPane(panelPrincipal);
         ventana.setDefaultCloseOperation(JFrame.DO_NOTHING_ON_CLOSE);
         ventana.setSize(1100, 600);
@@ -87,14 +63,14 @@ public class AddDisco {
     }
 
     public void initComponents() {
-        dlmDisco = new DefaultListModel<Disco>();
-        list1.setModel(dlmDisco);
+        dlmReproductor = new DefaultListModel<Disco>();
+        list1.setModel(dlmReproductor);
         spinnerModel = new SpinnerNumberModel(1,0,500,1);
-        spinnerPrecio.setModel(spinnerModel);
+        spinnerPuertos.setModel(spinnerModel);
     }
 
     public int getPrecio() {
-        Object value = spinnerPrecio.getValue();
+        Object value = spinnerPuertos.getValue();
         if (value instanceof Number) {
             return ((Number) value).intValue();
         } else {

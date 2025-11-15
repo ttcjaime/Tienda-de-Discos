@@ -22,14 +22,14 @@ import java.io.IOException;
 import java.io.PrintWriter;
 import java.util.Properties;
 
-public class TiendaDiscoControlador implements ActionListener, ListSelectionListener, WindowListener {
+public class DiscoControlador implements ActionListener, ListSelectionListener, WindowListener {
 
     private AddDisco addDisco;
-    private TiendaDiscoModelo modelo;
+    private DiscoModelo modelo;
     private File ultimaRutaSeleccionada;
     private String camposVacios;
 
-    public TiendaDiscoControlador(AddDisco addDisco, TiendaDiscoModelo modelo) {
+    public DiscoControlador(AddDisco addDisco, DiscoModelo modelo) {
         this.addDisco = addDisco;
         this.modelo = modelo;
 
@@ -101,6 +101,7 @@ public class TiendaDiscoControlador implements ActionListener, ListSelectionList
         addDisco.pickDiscoCd.addActionListener(listener);
         addDisco.pickDiscoVinilo.addActionListener(listener);
         addDisco.btnBorrar.addActionListener(listener);
+        addDisco.btnVolver.addActionListener(listener);
     }
 
     private void addWindowListener(WindowListener listener) {
@@ -200,7 +201,7 @@ public class TiendaDiscoControlador implements ActionListener, ListSelectionList
                 }
                 break;
             case "Volver":
-
+                addDisco.volverMenu();
                 break;
             case "Disco CD":
                 addDisco.lblModificar1.setText("Capacidad");
@@ -211,7 +212,12 @@ public class TiendaDiscoControlador implements ActionListener, ListSelectionList
                 addDisco.lblModificar2.setText("Color");
                 break;
             case "Borrar":
-
+                try {
+                    addDisco.eliminarDatos();
+                    limpiarCampos();
+                } catch (ArrayIndexOutOfBoundsException aiobe) {
+                    Util.errorMensaje("Selecciona un disco para borrar");
+                }
                 break;
         }
     }

@@ -1,8 +1,7 @@
 package com.jaimeva.tiendadiscomvc.vista;
 
-import com.github.lgooddatepicker.components.DatePicker;
-import com.jaimeva.tiendadiscomvc.gui.TiendaDiscoControlador;
-import com.jaimeva.tiendadiscomvc.gui.TiendaDiscoModelo;
+import com.jaimeva.tiendadiscomvc.gui.DiscoControlador;
+import com.jaimeva.tiendadiscomvc.gui.DiscoModelo;
 import com.jaimeva.tiendadiscomvc.util.Util;
 
 import javax.swing.*;
@@ -11,12 +10,11 @@ import java.awt.event.ActionListener;
 import java.awt.event.WindowEvent;
 import java.awt.event.WindowListener;
 import java.io.File;
-import java.io.FileReader;
-import java.io.IOException;
-import java.io.PrintWriter;
-import java.util.Properties;
 
 public class Menu implements WindowListener {
+
+    private AddDisco addDisco;
+
     public JPanel panelPrincipal;
     public JPanel PanelCabecera;
     public JButton btnAddReproductor;
@@ -37,6 +35,10 @@ public class Menu implements WindowListener {
         ventana.setVisible(true);
         ventana.setLocationRelativeTo(null);
         botones = new JButton[] {btnAddDisco, btnAddReproductor, btnAddReproductor};
+        addWindowListener(this);
+        addDisco = new AddDisco();
+        DiscoModelo modelo = new DiscoModelo();
+        DiscoControlador controlador = new DiscoControlador(addDisco, modelo); //los creo aqui para que la ventana addDisco solo se abra una vez, y no haya más ocultas abiertas
         boton();
     }
 
@@ -47,9 +49,9 @@ public class Menu implements WindowListener {
                 public void actionPerformed(ActionEvent e) {
                     switch(boton.getText()) {
                         case "Añadir Disco":
-                            AddDisco addDisco = new AddDisco();
-                            TiendaDiscoModelo modelo = new TiendaDiscoModelo();
-                            TiendaDiscoControlador controlador = new TiendaDiscoControlador(addDisco, modelo);
+                            addDisco.setMenu(Menu.this);
+                            Menu.this.ventana.setVisible(false);
+                            addDisco.ventana.setVisible(true);
                             break;
                         case "Ver Lista":
                             break;
@@ -61,6 +63,9 @@ public class Menu implements WindowListener {
         }
     }
 
+    private void addWindowListener(WindowListener listener) {
+        ventana.addWindowListener(listener);
+    }
 
     public void windowClosing(WindowEvent e) {
         int resp = Util.mensajeConfirmacion("¿Desea cerrar la ventana?", "Salir");

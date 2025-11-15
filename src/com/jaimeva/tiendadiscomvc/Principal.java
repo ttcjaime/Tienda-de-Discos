@@ -7,6 +7,5 @@ public class Principal {
 
         Menu vista  = new Menu();
 
-
     }
 }

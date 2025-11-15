@@ -2,23 +2,25 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="c4fadcbc-9a1a-4e16-89db-c40bc5ae1ea1" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/imagenes/bluetooth.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/imagenes/material.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/imagenes/paleta-de-color.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/imagenes/usb.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/jaimeva/tiendadiscomvc/gui/ReproductorControlador.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/jaimeva/tiendadiscomvc/gui/ReproductorModelo.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/jaimeva/tiendadiscomvc/vista/AddReproductor.form" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/jaimeva/tiendadiscomvc/vista/AddReproductor.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/PracticaUD1JaimeMendoza/com/jaimeva/tiendadiscomvc/base/Cd.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/PracticaUD1JaimeMendoza/com/jaimeva/tiendadiscomvc/base/Cd.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/PracticaUD1JaimeMendoza/com/jaimeva/tiendadiscomvc/base/Disco.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/PracticaUD1JaimeMendoza/com/jaimeva/tiendadiscomvc/base/Disco.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/PracticaUD1JaimeMendoza/com/jaimeva/tiendadiscomvc/base/Vinilo.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/PracticaUD1JaimeMendoza/com/jaimeva/tiendadiscomvc/base/Vinilo.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/PracticaUD1JaimeMendoza/com/jaimeva/tiendadiscomvc/gui/TiendaDiscoControlador.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/PracticaUD1JaimeMendoza/com/jaimeva/tiendadiscomvc/gui/TiendaDiscoControlador.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/PracticaUD1JaimeMendoza/com/jaimeva/tiendadiscomvc/gui/TiendaDiscoModelo.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/PracticaUD1JaimeMendoza/com/jaimeva/tiendadiscomvc/gui/TiendaDiscoModelo.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/PracticaUD1JaimeMendoza/com/jaimeva/tiendadiscomvc/util/Util.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/PracticaUD1JaimeMendoza/com/jaimeva/tiendadiscomvc/util/Util.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/discos.conf" beforeDir="false" afterPath="$PROJECT_DIR$/discos.conf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/PracticaUD1JaimeMendoza/com/jaimeva/tiendadiscomvc/Principal.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/PracticaUD1JaimeMendoza/com/jaimeva/tiendadiscomvc/Principal.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/PracticaUD1JaimeMendoza/com/jaimeva/tiendadiscomvc/gui/TiendaDiscoControlador.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/PracticaUD1JaimeMendoza/com/jaimeva/tiendadiscomvc/gui/TiendaDiscoModelo.class" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/PracticaUD1JaimeMendoza/com/jaimeva/tiendadiscomvc/vista/AddDisco.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/PracticaUD1JaimeMendoza/com/jaimeva/tiendadiscomvc/vista/AddDisco.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/PracticaUD1JaimeMendoza/com/jaimeva/tiendadiscomvc/vista/Menu$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/PracticaUD1JaimeMendoza/com/jaimeva/tiendadiscomvc/vista/Menu$1.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/PracticaUD1JaimeMendoza/com/jaimeva/tiendadiscomvc/vista/Menu.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/PracticaUD1JaimeMendoza/com/jaimeva/tiendadiscomvc/vista/Menu.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/jaimeva/tiendadiscomvc/base/Cd.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/jaimeva/tiendadiscomvc/base/Cd.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/jaimeva/tiendadiscomvc/base/Disco.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/jaimeva/tiendadiscomvc/base/Disco.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/jaimeva/tiendadiscomvc/base/Vinilo.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/jaimeva/tiendadiscomvc/base/Vinilo.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/jaimeva/tiendadiscomvc/gui/TiendaDiscoControlador.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/jaimeva/tiendadiscomvc/gui/TiendaDiscoControlador.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/jaimeva/tiendadiscomvc/gui/TiendaDiscoModelo.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/jaimeva/tiendadiscomvc/gui/TiendaDiscoModelo.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/jaimeva/tiendadiscomvc/util/Util.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/jaimeva/tiendadiscomvc/util/Util.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/jaimeva/tiendadiscomvc/vista/AddDisco.form" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/jaimeva/tiendadiscomvc/vista/AddDisco.form" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/jaimeva/tiendadiscomvc/Principal.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/jaimeva/tiendadiscomvc/Principal.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/jaimeva/tiendadiscomvc/gui/TiendaDiscoControlador.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/jaimeva/tiendadiscomvc/gui/DiscoControlador.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/jaimeva/tiendadiscomvc/gui/TiendaDiscoModelo.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/jaimeva/tiendadiscomvc/gui/DiscoModelo.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/com/jaimeva/tiendadiscomvc/vista/AddDisco.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/jaimeva/tiendadiscomvc/vista/AddDisco.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/com/jaimeva/tiendadiscomvc/vista/Menu.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/jaimeva/tiendadiscomvc/vista/Menu.java" afterDir="false" />
     </list>
@@ -41,22 +43,24 @@
   <component name="ProjectId" id="35IhArBwHTNIbAMJ4uWetrVNIFA" />
   <component name="PropertiesComponent">
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
-    <property name="UI_DESIGNER_EDITOR_MODE.PaletteManager.WIDTH" value="95" />
-    <property name="UI_DESIGNER_EDITOR_MODE.UIDesignerToolWindowManager.SHOW" value="true" />
-    <property name="UI_DESIGNER_EDITOR_MODE.UIDesignerToolWindowManager.WIDTH" value="364" />
+    <property name="UI_DESIGNER_EDITOR_MODE.PaletteManager.WIDTH" value="52" />
+    <property name="UI_DESIGNER_EDITOR_MODE.UIDesignerToolWindowManager.SHOW" value="false" />
+    <property name="UI_DESIGNER_EDITOR_MODE.UIDesignerToolWindowManager.WIDTH" value="459" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/com/jaimeva/tiendadiscomvc/vista" />
     <property name="project.structure.last.edited" value="Libraries" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
   </component>
   <component name="RecentsManager">
-    <key name="MoveFile.RECENT_KEYS">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\jaimi\Documents\Colegio Montessori\2do Año\PracticaUD1JaimeMendoza\src\com\jaimeva\tiendadiscomvc\vista" />
+      <recent name="C:\Users\jaimi\Documents\Colegio Montessori\2do Año\TiendaDiscoMVC\libs" />
       <recent name="C:\Users\jaimi\Documents\Colegio Montessori\2do Año\TiendaDiscoMVC\imagenes" />
     </key>
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="C:\Users\jaimi\Documents\Colegio Montessori\2do Año\TiendaDiscoMVC\libs" />
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\jaimi\Documents\Colegio Montessori\2do Año\PracticaUD1JaimeMendoza\imagenes" />
       <recent name="C:\Users\jaimi\Documents\Colegio Montessori\2do Año\TiendaDiscoMVC\imagenes" />
     </key>
   </component>
@@ -73,6 +77,19 @@
     </option>
   </component>
   <component name="RunManager" selected="Application.Principal">
+    <configuration name="DiscoControlador" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.jaimeva.tiendadiscomvc.gui.DiscoControlador" />
+      <module name="PracticaUD1JaimeMendoza" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.jaimeva.tiendadiscomvc.gui.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="Principal" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.jaimeva.tiendadiscomvc.Principal" />
       <module name="PracticaUD1JaimeMendoza" />
@@ -86,23 +103,9 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="TiendaDiscoControlador" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.jaimeva.tiendadiscomvc.gui.TiendaDiscoControlador" />
-      <module name="PracticaUD1JaimeMendoza" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.jaimeva.tiendadiscomvc.gui.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <recent_temporary>
       <list>
         <item itemvalue="Application.Principal" />
-        <item itemvalue="Application.TiendaDiscoControlador" />
       </list>
     </recent_temporary>
   </component>
@@ -132,6 +135,8 @@
       <workItem from="1763120966711" duration="2005000" />
       <workItem from="1763129951979" duration="15462000" />
       <workItem from="1763146043030" duration="29000" />
+      <workItem from="1763225824225" duration="10426000" />
+      <workItem from="1763240144520" duration="55000" />
     </task>
     <servers />
   </component>
