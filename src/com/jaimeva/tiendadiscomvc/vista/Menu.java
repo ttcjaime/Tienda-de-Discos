@@ -2,6 +2,8 @@ package com.jaimeva.tiendadiscomvc.vista;
 
 import com.jaimeva.tiendadiscomvc.gui.DiscoControlador;
 import com.jaimeva.tiendadiscomvc.gui.DiscoModelo;
+import com.jaimeva.tiendadiscomvc.gui.ReproductorControlador;
+import com.jaimeva.tiendadiscomvc.gui.ReproductorModelo;
 import com.jaimeva.tiendadiscomvc.util.Util;
 
 import javax.swing.*;
@@ -14,6 +16,7 @@ import java.io.File;
 public class Menu implements WindowListener {
 
     private AddDisco addDisco;
+    private AddReproductor addReproductor;
 
     public JPanel panelPrincipal;
     public JPanel PanelCabecera;
@@ -34,11 +37,14 @@ public class Menu implements WindowListener {
         ventana.setSize(600, 500);
         ventana.setVisible(true);
         ventana.setLocationRelativeTo(null);
-        botones = new JButton[] {btnAddDisco, btnAddReproductor, btnAddReproductor};
+        botones = new JButton[] {btnAddDisco, btnAddReproductor};
         addWindowListener(this);
         addDisco = new AddDisco();
         DiscoModelo modelo = new DiscoModelo();
         DiscoControlador controlador = new DiscoControlador(addDisco, modelo); //los creo aqui para que la ventana addDisco solo se abra una vez, y no haya más ocultas abiertas
+        addReproductor = new AddReproductor();
+        ReproductorModelo modeloReproductor = new ReproductorModelo();
+        ReproductorControlador rc = new ReproductorControlador(addReproductor, modeloReproductor);
         boton();
     }
 
@@ -56,6 +62,9 @@ public class Menu implements WindowListener {
                         case "Ver Lista":
                             break;
                         case "Añadir Reproductor":
+                            addReproductor.setMenu(Menu.this);
+                            Menu.this.ventana.setVisible(false);
+                            addReproductor.ventana.setVisible(true);
                             break;
                     }
                 }

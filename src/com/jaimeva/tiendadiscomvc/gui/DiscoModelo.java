@@ -20,15 +20,12 @@ import java.util.ArrayList;
 
 public class DiscoModelo {
     private ArrayList<Disco> listaDisco;
-    public ArrayList<Reproductor> listaReproductor;
 
     public DiscoModelo() {
         listaDisco = new ArrayList<>();
-        listaReproductor = new ArrayList<>();
     }
 
     public ArrayList<Disco> obtenerDisco() {return listaDisco;}
-    public ArrayList<Reproductor> obtenerReproductor() {return listaReproductor;}
 
     public void altaDiscoCD(String artista, LocalDate fecha_Lanzamiento, String nombre,  String canciones, double tiempoReproduccion, int precio, String generoMusical,
                             int capacidad, String formatoAudio) {

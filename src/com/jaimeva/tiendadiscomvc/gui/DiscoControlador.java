@@ -138,7 +138,6 @@ public class DiscoControlador implements ActionListener, ListSelectionListener, 
     }
 
 
-
     @Override
     public void actionPerformed(ActionEvent e) {
         String actionComand = e.getActionCommand(); //se realizan las acciones de todos los botones

@@ -2,26 +2,23 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="c4fadcbc-9a1a-4e16-89db-c40bc5ae1ea1" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/imagenes/bluetooth.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/imagenes/material.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/imagenes/paleta-de-color.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/imagenes/usb.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/jaimeva/tiendadiscomvc/gui/ReproductorControlador.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/jaimeva/tiendadiscomvc/gui/ReproductorModelo.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/jaimeva/tiendadiscomvc/vista/AddReproductor.form" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/jaimeva/tiendadiscomvc/vista/AddReproductor.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/discos.conf" beforeDir="false" afterPath="$PROJECT_DIR$/discos.conf" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/PracticaUD1JaimeMendoza/com/jaimeva/tiendadiscomvc/Principal.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/PracticaUD1JaimeMendoza/com/jaimeva/tiendadiscomvc/Principal.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/PracticaUD1JaimeMendoza/com/jaimeva/tiendadiscomvc/gui/TiendaDiscoControlador.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/PracticaUD1JaimeMendoza/com/jaimeva/tiendadiscomvc/gui/TiendaDiscoModelo.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/PracticaUD1JaimeMendoza/com/jaimeva/tiendadiscomvc/vista/AddDisco.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/PracticaUD1JaimeMendoza/com/jaimeva/tiendadiscomvc/vista/AddDisco.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/PracticaUD1JaimeMendoza/com/jaimeva/tiendadiscomvc/gui/DiscoControlador.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/PracticaUD1JaimeMendoza/com/jaimeva/tiendadiscomvc/gui/DiscoControlador.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/PracticaUD1JaimeMendoza/com/jaimeva/tiendadiscomvc/gui/DiscoModelo.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/PracticaUD1JaimeMendoza/com/jaimeva/tiendadiscomvc/gui/DiscoModelo.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/PracticaUD1JaimeMendoza/com/jaimeva/tiendadiscomvc/gui/ReproductorControlador.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/PracticaUD1JaimeMendoza/com/jaimeva/tiendadiscomvc/gui/ReproductorControlador.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/PracticaUD1JaimeMendoza/com/jaimeva/tiendadiscomvc/gui/ReproductorModelo.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/PracticaUD1JaimeMendoza/com/jaimeva/tiendadiscomvc/gui/ReproductorModelo.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/PracticaUD1JaimeMendoza/com/jaimeva/tiendadiscomvc/vista/Menu$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/PracticaUD1JaimeMendoza/com/jaimeva/tiendadiscomvc/vista/Menu$1.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/PracticaUD1JaimeMendoza/com/jaimeva/tiendadiscomvc/vista/Menu.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/PracticaUD1JaimeMendoza/com/jaimeva/tiendadiscomvc/vista/Menu.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/jaimeva/tiendadiscomvc/Principal.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/jaimeva/tiendadiscomvc/Principal.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/jaimeva/tiendadiscomvc/gui/TiendaDiscoControlador.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/jaimeva/tiendadiscomvc/gui/DiscoControlador.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/jaimeva/tiendadiscomvc/gui/TiendaDiscoModelo.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/jaimeva/tiendadiscomvc/gui/DiscoModelo.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/jaimeva/tiendadiscomvc/vista/AddDisco.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/jaimeva/tiendadiscomvc/vista/AddDisco.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/jaimeva/tiendadiscomvc/base/Reproductor.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/jaimeva/tiendadiscomvc/base/Reproductor.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/jaimeva/tiendadiscomvc/base/ReproductorCd.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/jaimeva/tiendadiscomvc/base/ReproductorCd.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/jaimeva/tiendadiscomvc/base/ReproductorVinilo.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/jaimeva/tiendadiscomvc/base/ReproductorVinilo.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/jaimeva/tiendadiscomvc/gui/DiscoControlador.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/jaimeva/tiendadiscomvc/gui/DiscoControlador.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/jaimeva/tiendadiscomvc/gui/DiscoModelo.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/jaimeva/tiendadiscomvc/gui/DiscoModelo.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/jaimeva/tiendadiscomvc/gui/ReproductorControlador.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/jaimeva/tiendadiscomvc/gui/ReproductorControlador.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/jaimeva/tiendadiscomvc/gui/ReproductorModelo.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/jaimeva/tiendadiscomvc/gui/ReproductorModelo.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/jaimeva/tiendadiscomvc/vista/AddReproductor.form" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/jaimeva/tiendadiscomvc/vista/AddReproductor.form" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/jaimeva/tiendadiscomvc/vista/AddReproductor.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/jaimeva/tiendadiscomvc/vista/AddReproductor.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/com/jaimeva/tiendadiscomvc/vista/Menu.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/jaimeva/tiendadiscomvc/vista/Menu.java" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -44,8 +41,8 @@
   <component name="PropertiesComponent">
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="UI_DESIGNER_EDITOR_MODE.PaletteManager.WIDTH" value="52" />
-    <property name="UI_DESIGNER_EDITOR_MODE.UIDesignerToolWindowManager.SHOW" value="false" />
-    <property name="UI_DESIGNER_EDITOR_MODE.UIDesignerToolWindowManager.WIDTH" value="459" />
+    <property name="UI_DESIGNER_EDITOR_MODE.UIDesignerToolWindowManager.SHOW" value="true" />
+    <property name="UI_DESIGNER_EDITOR_MODE.UIDesignerToolWindowManager.WIDTH" value="242" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/src/com/jaimeva/tiendadiscomvc/vista" />
@@ -137,6 +134,7 @@
       <workItem from="1763146043030" duration="29000" />
       <workItem from="1763225824225" duration="10426000" />
       <workItem from="1763240144520" duration="55000" />
+      <workItem from="1763246417899" duration="8483000" />
     </task>
     <servers />
   </component>

@@ -21,7 +21,7 @@
               <font/>
             </border>
             <children>
-              <component id="9664d" class="javax.swing.JRadioButton" binding="pickDiscoCd">
+              <component id="9664d" class="javax.swing.JRadioButton" binding="pickReproductorCd">
                 <constraints>
                   <grid row="1" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
                   <gridbag weightx="1.0" weighty="1.0"/>
@@ -164,10 +164,10 @@
                         <properties>
                           <foreground color="-15789798"/>
                           <icon value="bluetooth.png"/>
-                          <text value="  Bluetooth"/>
+                          <text value=" Marca"/>
                         </properties>
                       </component>
-                      <component id="3c679" class="javax.swing.JTextField" binding="txtBluetooth">
+                      <component id="3c679" class="javax.swing.JTextField" binding="txtMarca">
                         <constraints/>
                         <properties>
                           <background color="-1647416"/>
@@ -188,6 +188,27 @@
                 </properties>
                 <border type="line"/>
                 <children>
+                  <grid id="38c50" layout-manager="FlowLayout" hgap="5" vgap="5" flow-align="0">
+                    <constraints/>
+                    <properties>
+                      <background color="-1647416"/>
+                    </properties>
+                    <border type="none"/>
+                    <children>
+                      <component id="8a110" class="javax.swing.JLabel">
+                        <constraints/>
+                        <properties>
+                          <foreground color="-15789798"/>
+                          <icon value="euro.png"/>
+                          <text value=" Precio"/>
+                        </properties>
+                      </component>
+                      <component id="ed4e4" class="javax.swing.JSpinner" binding="spinnerPrecio">
+                        <constraints/>
+                        <properties/>
+                      </component>
+                    </children>
+                  </grid>
                   <grid id="d775f" binding="PanelPrecio" layout-manager="FlowLayout" hgap="5" vgap="5" flow-align="0">
                     <constraints/>
                     <properties>
@@ -225,6 +246,30 @@
                         </properties>
                       </component>
                       <component id="f5f3b" class="javax.swing.JTextField" binding="txtModificador1">
+                        <constraints/>
+                        <properties>
+                          <background color="-1647416"/>
+                          <columns value="10"/>
+                        </properties>
+                      </component>
+                    </children>
+                  </grid>
+                  <grid id="6b645" layout-manager="FlowLayout" hgap="5" vgap="5" flow-align="0">
+                    <constraints/>
+                    <properties>
+                      <background color="-1647416"/>
+                    </properties>
+                    <border type="none"/>
+                    <children>
+                      <component id="673df" class="javax.swing.JLabel">
+                        <constraints/>
+                        <properties>
+                          <foreground color="-15789798"/>
+                          <icon value="formato-de-archivo-de-audio.png"/>
+                          <text value=" Modelo"/>
+                        </properties>
+                      </component>
+                      <component id="6a5de" class="javax.swing.JTextField" binding="txtModelo">
                         <constraints/>
                         <properties>
                           <background color="-1647416"/>
@@ -356,4 +401,10 @@
       </grid>
     </children>
   </grid>
+  <buttonGroups>
+    <group name="buttonGroup1">
+      <member id="d5b32"/>
+      <member id="9664d"/>
+    </group>
+  </buttonGroups>
 </form>

@@ -7,8 +7,13 @@ public class ReproductorVinilo extends Reproductor {
 
     private String selectorVelocidad;
 
-    public ReproductorVinilo(String color, String materialDeCaja, boolean bluetooth, int puertos_Usb, String selectorVelocidad) {
-        super(color, materialDeCaja, bluetooth, puertos_Usb);
+    public ReproductorVinilo() {
+
+    }
+
+    public ReproductorVinilo(String modelo, String marca, String color, String materialDeCaja,
+                             int puertos_Usb, String selectorVelocidad, int precio) {
+        super(marca, modelo, color, materialDeCaja, puertos_Usb, precio);
         this.selectorVelocidad = selectorVelocidad;
     }
 
@@ -18,5 +23,10 @@ public class ReproductorVinilo extends Reproductor {
 
     public void setSelectorVelocidad(String selectorVelocidad) {
         this.selectorVelocidad = selectorVelocidad;
+    }
+
+    @Override
+    public String toString() {
+        return super.toString() + " | Selector de Velocidad: " + selectorVelocidad;
     }
 }

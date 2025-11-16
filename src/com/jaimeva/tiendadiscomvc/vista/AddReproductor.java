@@ -2,6 +2,7 @@ package com.jaimeva.tiendadiscomvc.vista;
 
 import com.github.lgooddatepicker.components.DatePicker;
 import com.jaimeva.tiendadiscomvc.base.Disco;
+import com.jaimeva.tiendadiscomvc.base.Reproductor;
 
 import javax.swing.*;
 
@@ -9,7 +10,7 @@ public class AddReproductor {
     public JPanel panelPrincipal;
     public JPanel PanelEleccion;
     public JRadioButton pickReproductorVinilo;
-    public JRadioButton pickDiscoCd;
+    public JRadioButton pickReproductorCd;
     public JPanel PanelCabecera;
     public JPanel JPanelCentro;
     public JPanel PrimerPanelCentro;
@@ -18,7 +19,7 @@ public class AddReproductor {
     public JPanel PanelArtista;
     public JTextField txtMaterial;
     public JPanel PanelGenero;
-    public JTextField txtBluetooth;
+    public JTextField txtMarca;
     public JPanel SegundoPanelCentro;
     public JPanel PanelPrecio;
     public JSpinner spinnerPuertos;
@@ -36,7 +37,9 @@ public class AddReproductor {
     public JButton btnExportar;
     public JPanel PanelBorrar;
     public JButton btnBorrar;
-    public JList list1;
+    public JList<Reproductor> list1;
+    public JSpinner spinnerPrecio;
+    public JTextField txtModelo;
 
     private SpinnerNumberModel spinnerModel;
 
@@ -63,18 +66,27 @@ public class AddReproductor {
     }
 
     public void initComponents() {
-        dlmReproductor = new DefaultListModel<Disco>();
+        dlmReproductor = new DefaultListModel<Reproductor>();
         list1.setModel(dlmReproductor);
         spinnerModel = new SpinnerNumberModel(1,0,500,1);
         spinnerPuertos.setModel(spinnerModel);
     }
 
-    public int getPrecio() {
+    public int getPuertos() {
         Object value = spinnerPuertos.getValue();
         if (value instanceof Number) {
             return ((Number) value).intValue();
         } else {
-            return 0; // o lanzar una excepción
+            return 0;
+        }
+    }
+
+    public int getPrecio() {
+        Object value = spinnerPrecio.getValue();
+        if (value instanceof Number) {
+            return ((Number) value).intValue();
+        } else {
+            return 0;
         }
     }
 
