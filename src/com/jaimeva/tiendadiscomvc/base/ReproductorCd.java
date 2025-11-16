@@ -24,7 +24,7 @@ public class ReproductorCd extends Reproductor {
 
     @Override
     public String toString() {
-        return super.toString() + " | Salida de Audio: " + salidaAudio;
+        return "Reproductor de Cd | " + super.toString() + " | Salida de Audio: " + salidaAudio;
     }
 
 }

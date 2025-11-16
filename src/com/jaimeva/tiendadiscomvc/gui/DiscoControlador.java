@@ -16,10 +16,7 @@ import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 import java.awt.event.WindowEvent;
 import java.awt.event.WindowListener;
-import java.io.File;
-import java.io.FileReader;
-import java.io.IOException;
-import java.io.PrintWriter;
+import java.io.*;
 import java.util.Properties;
 
 public class DiscoControlador implements ActionListener, ListSelectionListener, WindowListener {
@@ -175,11 +172,11 @@ public class DiscoControlador implements ActionListener, ListSelectionListener, 
                     try {
                         modelo.importarXML(selectorFichero.getSelectedFile());
                     } catch (ParserConfigurationException ex) {
-                        ex.printStackTrace();
+                        Util.errorMensaje("Error interno configurando el parsre");
                     } catch (IOException ex) {
-                        ex.printStackTrace();
+                        Util.errorMensaje("No se encuentra el archivo");
                     } catch (SAXException ex) {
-                        ex.printStackTrace();
+                        Util.errorMensaje("El archivo XML no es válido o está mal formado");
                     } catch (NumberFormatException nfe) {
                         Util.errorMensaje("No se puede cargar un XML con un formato de numeros incorrecto");
                     }
@@ -193,9 +190,9 @@ public class DiscoControlador implements ActionListener, ListSelectionListener, 
                     try {
                         modelo.exportarXML(selectorFichero2.getSelectedFile());
                     } catch (ParserConfigurationException ex) {
-                        ex.printStackTrace();
+                       Util.errorMensaje("Error interno al configurar el generador XML");
                     } catch (TransformerException ex) {
-                        ex.printStackTrace();
+                        Util.errorMensaje("Error al generar o guardar el archivo XML");
                     }
                 }
                 break;
@@ -212,6 +209,8 @@ public class DiscoControlador implements ActionListener, ListSelectionListener, 
                 break;
             case "Borrar":
                 try {
+                    Disco d = addDisco.list1.getSelectedValue();
+                    modelo.borrarDisco(d);
                     addDisco.eliminarDatos();
                     limpiarCampos();
                 } catch (ArrayIndexOutOfBoundsException aiobe) {

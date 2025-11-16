@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<form xmlns="http://www.intellij.com/uidesigner/form/" version="1" bind-to-class="com.jaimeva.tiendadiscomvc.vista.VerLista">
+  <grid id="27dc6" binding="panelPrincipal" layout-manager="BorderLayout" hgap="0" vgap="0">
+    <constraints>
+      <xy x="20" y="20" width="500" height="458"/>
+    </constraints>
+    <properties>
+      <background color="-1647416"/>
+    </properties>
+    <border type="none"/>
+    <children>
+      <grid id="6c21d" binding="panelEleccion" layout-manager="GridBagLayout">
+        <constraints border-constraint="West"/>
+        <properties>
+          <background color="-4942216"/>
+          <foreground color="-16777216"/>
+        </properties>
+        <border type="line">
+          <font/>
+        </border>
+        <children>
+          <component id="24d5c" class="javax.swing.JLabel">
+            <constraints>
+              <grid row="1" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+              <gridbag weightx="0.0" weighty="0.4"/>
+            </constraints>
+            <properties>
+              <foreground color="-16777216"/>
+              <text value="Lista de Reproductores"/>
+            </properties>
+          </component>
+          <component id="3e7b4" class="javax.swing.JLabel">
+            <constraints>
+              <grid row="0" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+              <gridbag weightx="0.0" weighty="0.4"/>
+            </constraints>
+            <properties>
+              <foreground color="-16777216"/>
+              <text value="Lista de Discos"/>
+            </properties>
+          </component>
+        </children>
+      </grid>
+      <grid id="c3678" binding="panelCabecera" layout-manager="FlowLayout" hgap="5" vgap="5" flow-align="1">
+        <constraints border-constraint="North"/>
+        <properties>
+          <background color="-4942216"/>
+        </properties>
+        <border type="none"/>
+        <children>
+          <component id="27a68" class="javax.swing.JLabel">
+            <constraints/>
+            <properties>
+              <foreground color="-16777216"/>
+              <text value="Listas"/>
+            </properties>
+          </component>
+        </children>
+      </grid>
+      <grid id="f8bbd" binding="panelCentro" layout-manager="FormLayout">
+        <rowspec value="center:d:grow"/>
+        <rowspec value="top:4dlu:noGrow"/>
+        <rowspec value="center:max(d;4px):noGrow"/>
+        <rowspec value="top:4dlu:noGrow"/>
+        <rowspec value="center:d:grow"/>
+        <colspec value="fill:d:grow"/>
+        <constraints border-constraint="Center"/>
+        <properties>
+          <background color="-1647416"/>
+        </properties>
+        <border type="none"/>
+        <children>
+          <component id="caace" class="javax.swing.JButton" binding="btnVolver">
+            <constraints>
+              <grid row="2" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
+              <forms/>
+            </constraints>
+            <properties>
+              <background color="-7573936"/>
+              <label value="Volver"/>
+              <text value="Volver"/>
+            </properties>
+          </component>
+          <scrollpane id="1416c">
+            <constraints>
+              <grid row="4" column="0" row-span="1" col-span="1" vsize-policy="7" hsize-policy="7" anchor="0" fill="3" indent="0" use-parent-layout="false"/>
+              <forms defaultalign-horz="false" defaultalign-vert="false"/>
+            </constraints>
+            <properties/>
+            <border type="none"/>
+            <children>
+              <component id="9169f" class="javax.swing.JList" binding="listaReproductores">
+                <constraints/>
+                <properties/>
+              </component>
+            </children>
+          </scrollpane>
+          <scrollpane id="53822">
+            <constraints>
+              <grid row="0" column="0" row-span="1" col-span="1" vsize-policy="7" hsize-policy="7" anchor="0" fill="3" indent="0" use-parent-layout="false"/>
+              <forms defaultalign-horz="false" defaultalign-vert="false"/>
+            </constraints>
+            <properties/>
+            <border type="none"/>
+            <children>
+              <component id="2d3bc" class="javax.swing.JList" binding="listaDiscos">
+                <constraints/>
+                <properties/>
+              </component>
+            </children>
+          </scrollpane>
+        </children>
+      </grid>
+    </children>
+  </grid>
+</form>

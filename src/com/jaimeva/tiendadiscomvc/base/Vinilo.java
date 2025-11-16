@@ -34,6 +34,6 @@ public class Vinilo extends Disco {
 
     @Override
     public String toString() {
-        return super.toString() + " | Color: " + color + " | Pulgadas: " + pulgadas;
+        return "Vinilo | " + super.toString() + " | Color: " + color + " | Pulgadas: " + pulgadas;
     }
 }

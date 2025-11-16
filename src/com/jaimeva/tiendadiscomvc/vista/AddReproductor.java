@@ -7,44 +7,58 @@ import com.jaimeva.tiendadiscomvc.base.Reproductor;
 import javax.swing.*;
 
 public class AddReproductor {
+    //paneles
     public JPanel panelPrincipal;
-    public JPanel PanelEleccion;
-    public JRadioButton pickReproductorVinilo;
-    public JRadioButton pickReproductorCd;
-    public JPanel PanelCabecera;
-    public JPanel JPanelCentro;
-    public JPanel PrimerPanelCentro;
-    public JPanel PanelDisco;
-    public JTextField txtColor;
-    public JPanel PanelArtista;
-    public JTextField txtMaterial;
-    public JPanel PanelGenero;
-    public JTextField txtMarca;
-    public JPanel SegundoPanelCentro;
-    public JPanel PanelPrecio;
-    public JSpinner spinnerPuertos;
-    public JPanel TercerPanelCentro;
-    public JPanel PanelCapacidad;
-    public JLabel lblModificar1;
-    public JTextField txtModificador1;
+    public JPanel panelEleccion;
+    public JPanel panelCabecera;
+    public JPanel panelCentro;
+    public JPanel primerPanelCentro;
+    public JPanel panelDisco;
+    public JPanel panelArtista;
+    public JPanel panelGenero;
+    public JPanel segundoPanelCentro;
+    public JPanel panelPrecio;
+    public JPanel tercerPanelCentro;
+    public JPanel panelCapacidad;
     public JPanel panelVolver;
+    public JPanel panelImportar;
+    public JPanel panelNuevo;
+    public JPanel panelAdd;
+    public JPanel panelBorrar;
+
+    //botones
     public JButton btnVolver;
-    public JPanel PanelImportar;
     public JButton btnImportar;
-    public JPanel PanelNuevo;
     public JButton btnNuevo;
-    public JPanel PanelAdd;
     public JButton btnExportar;
-    public JPanel PanelBorrar;
     public JButton btnBorrar;
-    public JList<Reproductor> list1;
-    public JSpinner spinnerPrecio;
+
+    //labels
+    public JLabel lblModificar1;
+
+    //textFields
+    public JTextField txtColor;
+    public JTextField txtMaterial;
+    public JTextField txtMarca;
+    public JTextField txtModificador1;
     public JTextField txtModelo;
 
-    private SpinnerNumberModel spinnerModel;
+    //radioButton
+    public JRadioButton pickReproductorVinilo;
+    public JRadioButton pickReproductorCd;
 
+    //spinner
+    public JSpinner spinnerPuertos;
+    public JSpinner spinnerPrecio;
+
+    //jlist
+    public JList<Reproductor> list1;
+
+    //creados por mi
+    private SpinnerNumberModel spinnerPuertoModel;
+    private SpinnerNumberModel spinnerPrecioModel;
     public JFrame ventana;
-    public DefaultListModel dlmReproductor;
+    public DefaultListModel<Reproductor> dlmReproductor;
     public Menu menu;
 
     public AddReproductor() {
@@ -68,8 +82,10 @@ public class AddReproductor {
     public void initComponents() {
         dlmReproductor = new DefaultListModel<Reproductor>();
         list1.setModel(dlmReproductor);
-        spinnerModel = new SpinnerNumberModel(1,0,500,1);
-        spinnerPuertos.setModel(spinnerModel);
+        spinnerPuertoModel = new SpinnerNumberModel(1,1,500,1);
+        spinnerPuertos.setModel(spinnerPuertoModel);
+        spinnerPrecioModel = new SpinnerNumberModel(1, 1, 500, 1);
+        spinnerPrecio.setModel(spinnerPrecioModel);
     }
 
     public int getPuertos() {

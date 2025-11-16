@@ -1,6 +1,5 @@
 package com.jaimeva.tiendadiscomvc.gui;
 
-import com.jaimeva.tiendadiscomvc.base.Disco;
 import com.jaimeva.tiendadiscomvc.base.Reproductor;
 import com.jaimeva.tiendadiscomvc.base.ReproductorCd;
 import com.jaimeva.tiendadiscomvc.base.ReproductorVinilo;
@@ -174,13 +173,12 @@ public class ReproductorControlador implements ActionListener, ListSelectionList
                 if (opt == JFileChooser.APPROVE_OPTION) {
                     try {
                         modelo.importarXML(selectorFichero.getSelectedFile());
-                        System.out.println("Importados: " + modelo.getListaReproductores().size());
                     } catch (ParserConfigurationException ex) {
-                        ex.printStackTrace();
+                        Util.errorMensaje("Error interno configurando el parse");
                     } catch (IOException ex) {
-                        ex.printStackTrace();
+                        Util.errorMensaje("No se encuentra el archivo");
                     } catch (SAXException ex) {
-                        ex.printStackTrace();
+                        Util.errorMensaje("El archivo XML no es válido o está mal formado");
                     } catch (NumberFormatException nfe) {
                         Util.errorMensaje("No se puede cargar un XML con un formato de numeros incorrecto");
                     }
@@ -194,9 +192,9 @@ public class ReproductorControlador implements ActionListener, ListSelectionList
                     try {
                         modelo.exportarXML(selectorFichero2.getSelectedFile());
                     } catch (ParserConfigurationException ex) {
-                        ex.printStackTrace();
+                        Util.errorMensaje("Error interno configurando el parse");
                     } catch (TransformerException ex) {
-                        ex.printStackTrace();
+                        Util.errorMensaje("Error al generar o guardar el archivo XML");
                     }
                 }
                 break;

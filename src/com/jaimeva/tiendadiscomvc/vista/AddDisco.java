@@ -8,26 +8,26 @@ import javax.swing.*;
 public class AddDisco {
     //paneles
     public JPanel panelPrincipal;
-    public JPanel PanelEleccion;
-    public JPanel PanelCabecera;
-    public JPanel JPanelCentro;
-    public JPanel PrimerPanelCentro;
-    public JPanel PanelDisco;
-    public JPanel PanelArtista;
-    public JPanel PanelGenero;
-    public JPanel SegundoPanelCentro;
-    public JPanel TercerPanelCentro;
-    public JPanel CuartoPanelCentro;
-    public JPanel PanelFecha;
-    public JPanel PanelPrecio;
-    public JPanel PanelTiempo;
-    public JPanel PanelFormato;
-    public JPanel PanelCanciones;
-    public JPanel PanelCapacidad;
-    public JPanel PanelImportar;
-    public JPanel PanelNuevo;
-    public JPanel PanelAdd;
-    public JPanel PanelBorrar;
+    public JPanel panelEleccion;
+    public JPanel panelCabecera;
+    public JPanel panelCentro;
+    public JPanel primerPanelCentro;
+    public JPanel panelDisco;
+    public JPanel panelArtista;
+    public JPanel panelGenero;
+    public JPanel segundoPanelCentro;
+    public JPanel tercerPanelCentro;
+    public JPanel cuartoPanelCentro;
+    public JPanel panelFecha;
+    public JPanel panelPrecio;
+    public JPanel panelTiempo;
+    public JPanel panelFormato;
+    public JPanel panelCanciones;
+    public JPanel panelCapacidad;
+    public JPanel panelImportar;
+    public JPanel panelNuevo;
+    public JPanel panelAdd;
+    public JPanel panelBorrar;
     public JPanel panelVolver;
     public JButton btnVolver;
 
@@ -64,7 +64,7 @@ public class AddDisco {
 
     //hechos por mi
     public JFrame ventana;
-    public DefaultListModel dlmDisco;
+    public DefaultListModel<Disco> dlmDisco;
     public Menu menu;
 
 
@@ -89,7 +89,7 @@ public class AddDisco {
     public void initComponents() {
         dlmDisco = new DefaultListModel<Disco>();
         list1.setModel(dlmDisco);
-        spinnerModel = new SpinnerNumberModel(1,0,500,1);
+        spinnerModel = new SpinnerNumberModel(1,1,500,1);
         spinnerPrecio.setModel(spinnerModel);
     }
 

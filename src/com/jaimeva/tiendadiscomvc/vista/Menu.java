@@ -15,40 +15,41 @@ import java.io.File;
 
 public class Menu implements WindowListener {
 
-    private AddDisco addDisco;
-    private AddReproductor addReproductor;
-
+    //paneles
     public JPanel panelPrincipal;
-    public JPanel PanelCabecera;
+    public JPanel panelCabecera;
+    private JPanel panelCentro;
+    private JPanel panelFoot;
+
+    //botones
     public JButton btnAddReproductor;
     public JButton btnVerLista;
     public JButton btnAddDisco;
 
+    //creados por mi
+    private AddDisco addDisco;
+    private AddReproductor addReproductor;
+    private VerLista verLista;
     private File ultimaRutaExportacion;
-
     public JFrame ventana;
-
-    JButton[] botones;
+    private JButton[] botones;
 
     public Menu() {
-        ventana = new JFrame("Tienda de discos");
+        ventana = new JFrame("Menu");
         ventana.setContentPane(panelPrincipal);
         ventana.setDefaultCloseOperation(JFrame.DO_NOTHING_ON_CLOSE);
         ventana.setSize(600, 500);
         ventana.setVisible(true);
         ventana.setLocationRelativeTo(null);
-        botones = new JButton[] {btnAddDisco, btnAddReproductor};
+        botones = new JButton[] {btnAddDisco, btnAddReproductor, btnVerLista};
         addWindowListener(this);
-        addDisco = new AddDisco();
-        DiscoModelo modelo = new DiscoModelo();
-        DiscoControlador controlador = new DiscoControlador(addDisco, modelo); //los creo aqui para que la ventana addDisco solo se abra una vez, y no haya más ocultas abiertas
-        addReproductor = new AddReproductor();
-        ReproductorModelo modeloReproductor = new ReproductorModelo();
-        ReproductorControlador rc = new ReproductorControlador(addReproductor, modeloReproductor);
-        boton();
+        iniciarAddDisco();
+        iniciarAddReproductores();
+        verLista = new VerLista();
+        funcionBotones();
     }
 
-    public void boton() {
+    public void funcionBotones() {
         for (JButton boton : botones) {
             boton.addActionListener(new ActionListener() {
                 @Override
@@ -60,6 +61,11 @@ public class Menu implements WindowListener {
                             addDisco.ventana.setVisible(true);
                             break;
                         case "Ver Lista":
+                            verLista.setMenu(Menu.this);
+                            Menu.this.ventana.setVisible(false);
+                            verLista.ventana.setVisible(true);
+                            verLista.listaDiscos.setModel(addDisco.dlmDisco);
+                            verLista.listaReproductores.setModel(addReproductor.dlmReproductor);
                             break;
                         case "Añadir Reproductor":
                             addReproductor.setMenu(Menu.this);
@@ -70,6 +76,18 @@ public class Menu implements WindowListener {
                 }
             });
         }
+    }
+
+    private void iniciarAddDisco() {
+        addDisco = new AddDisco();
+        DiscoModelo modelo = new DiscoModelo();
+        DiscoControlador controlador = new DiscoControlador(addDisco, modelo); //los creo aqui para que la ventana addDisco solo se abra una vez, y no haya más pestañas abiertas
+    }
+
+    private void iniciarAddReproductores() {
+        addReproductor = new AddReproductor();
+        ReproductorModelo modeloReproductor = new ReproductorModelo();
+        ReproductorControlador rc = new ReproductorControlador(addReproductor, modeloReproductor);
     }
 
     private void addWindowListener(WindowListener listener) {

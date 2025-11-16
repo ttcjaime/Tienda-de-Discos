@@ -7,7 +7,7 @@
     <properties/>
     <border type="none"/>
     <children>
-      <grid id="a2df7" binding="PanelEleccion" layout-manager="GridBagLayout">
+      <grid id="a2df7" binding="panelEleccion" layout-manager="GridBagLayout">
         <constraints border-constraint="West"/>
         <properties>
           <background color="-4942216"/>
@@ -54,7 +54,7 @@
           </component>
         </children>
       </grid>
-      <grid id="b2a94" binding="PanelCabecera" layout-manager="FlowLayout" hgap="5" vgap="5" flow-align="1">
+      <grid id="b2a94" binding="panelCabecera" layout-manager="FlowLayout" hgap="5" vgap="5" flow-align="1">
         <constraints border-constraint="North"/>
         <properties>
           <background color="-4942216"/>
@@ -72,7 +72,7 @@
           </component>
         </children>
       </grid>
-      <grid id="21a6f" binding="JPanelCentro" layout-manager="FormLayout">
+      <grid id="21a6f" binding="panelCentro" layout-manager="FormLayout">
         <rowspec value="center:d:noGrow"/>
         <rowspec value="top:4dlu:noGrow"/>
         <rowspec value="center:max(d;4px):noGrow"/>
@@ -90,7 +90,7 @@
         </properties>
         <border type="none"/>
         <children>
-          <grid id="fd2b0" binding="PrimerPanelCentro" layout-manager="FlowLayout" hgap="15" vgap="10" flow-align="1">
+          <grid id="fd2b0" binding="primerPanelCentro" layout-manager="FlowLayout" hgap="15" vgap="10" flow-align="1">
             <constraints>
               <grid row="0" column="0" row-span="1" col-span="1" vsize-policy="3" hsize-policy="3" anchor="0" fill="3" indent="0" use-parent-layout="false"/>
               <forms/>
@@ -100,7 +100,7 @@
             </properties>
             <border type="line"/>
             <children>
-              <grid id="42a29" binding="PanelDisco" layout-manager="FlowLayout" hgap="5" vgap="5" flow-align="0">
+              <grid id="42a29" binding="panelDisco" layout-manager="FlowLayout" hgap="5" vgap="5" flow-align="0">
                 <constraints/>
                 <properties>
                   <background color="-1647416"/>
@@ -125,7 +125,7 @@
                   </component>
                 </children>
               </grid>
-              <grid id="3302a" binding="PanelArtista" layout-manager="FlowLayout" hgap="5" vgap="5" flow-align="0">
+              <grid id="3302a" binding="panelArtista" layout-manager="FlowLayout" hgap="5" vgap="5" flow-align="0">
                 <constraints/>
                 <properties>
                   <background color="-1647416"/>
@@ -149,7 +149,7 @@
                   </component>
                 </children>
               </grid>
-              <grid id="5abe8" binding="PanelGenero" layout-manager="FlowLayout" hgap="5" vgap="5" flow-align="0">
+              <grid id="5abe8" binding="panelGenero" layout-manager="FlowLayout" hgap="5" vgap="5" flow-align="0">
                 <constraints/>
                 <properties>
                   <background color="-1647416"/>
@@ -175,7 +175,7 @@
               </grid>
             </children>
           </grid>
-          <grid id="14b0b" binding="SegundoPanelCentro" layout-manager="FlowLayout" hgap="15" vgap="10" flow-align="1">
+          <grid id="14b0b" binding="segundoPanelCentro" layout-manager="FlowLayout" hgap="15" vgap="10" flow-align="1">
             <constraints>
               <grid row="2" column="0" row-span="1" col-span="1" vsize-policy="3" hsize-policy="3" anchor="0" fill="3" indent="0" use-parent-layout="false"/>
               <forms/>
@@ -185,7 +185,7 @@
             </properties>
             <border type="line"/>
             <children>
-              <grid id="32668" binding="PanelFecha" layout-manager="FlowLayout" hgap="5" vgap="5" flow-align="0">
+              <grid id="32668" binding="panelFecha" layout-manager="FlowLayout" hgap="5" vgap="5" flow-align="0">
                 <constraints/>
                 <properties>
                   <background color="-1647416"/>
@@ -207,7 +207,7 @@
                   </component>
                 </children>
               </grid>
-              <grid id="58805" binding="PanelPrecio" layout-manager="FlowLayout" hgap="5" vgap="5" flow-align="0">
+              <grid id="58805" binding="panelPrecio" layout-manager="FlowLayout" hgap="5" vgap="5" flow-align="0">
                 <constraints/>
                 <properties>
                   <background color="-1647416"/>
@@ -228,7 +228,7 @@
                   </component>
                 </children>
               </grid>
-              <grid id="8a25f" binding="PanelTiempo" layout-manager="FlowLayout" hgap="5" vgap="5" flow-align="0">
+              <grid id="8a25f" binding="panelTiempo" layout-manager="FlowLayout" hgap="5" vgap="5" flow-align="0">
                 <constraints/>
                 <properties>
                   <background color="-1647416"/>
@@ -254,7 +254,7 @@
               </grid>
             </children>
           </grid>
-          <grid id="c5d7" binding="TercerPanelCentro" layout-manager="FlowLayout" hgap="15" vgap="10" flow-align="1">
+          <grid id="c5d7" binding="tercerPanelCentro" layout-manager="FlowLayout" hgap="15" vgap="10" flow-align="1">
             <constraints>
               <grid row="4" column="0" row-span="1" col-span="1" vsize-policy="3" hsize-policy="3" anchor="0" fill="3" indent="0" use-parent-layout="false"/>
               <forms/>
@@ -264,7 +264,7 @@
             </properties>
             <border type="line"/>
             <children>
-              <grid id="3e8bd" binding="PanelFormato" layout-manager="FlowLayout" hgap="5" vgap="5" flow-align="0">
+              <grid id="3e8bd" binding="panelFormato" layout-manager="FlowLayout" hgap="5" vgap="5" flow-align="0">
                 <constraints/>
                 <properties>
                   <background color="-1647416"/>
@@ -288,7 +288,7 @@
                   </component>
                 </children>
               </grid>
-              <grid id="eee33" binding="PanelCanciones" layout-manager="FlowLayout" hgap="5" vgap="5" flow-align="0">
+              <grid id="eee33" binding="panelCanciones" layout-manager="FlowLayout" hgap="5" vgap="5" flow-align="0">
                 <constraints/>
                 <properties>
                   <background color="-1647416"/>
@@ -312,7 +312,7 @@
                   </component>
                 </children>
               </grid>
-              <grid id="53f06" binding="PanelCapacidad" layout-manager="FlowLayout" hgap="5" vgap="5" flow-align="0">
+              <grid id="53f06" binding="panelCapacidad" layout-manager="FlowLayout" hgap="5" vgap="5" flow-align="0">
                 <constraints/>
                 <properties>
                   <background color="-1647416"/>
@@ -338,7 +338,7 @@
               </grid>
             </children>
           </grid>
-          <grid id="be53a" binding="CuartoPanelCentro" layout-manager="FlowLayout" hgap="15" vgap="10" flow-align="1">
+          <grid id="be53a" binding="cuartoPanelCentro" layout-manager="FlowLayout" hgap="15" vgap="10" flow-align="1">
             <constraints>
               <grid row="6" column="0" row-span="1" col-span="1" vsize-policy="3" hsize-policy="3" anchor="0" fill="3" indent="0" use-parent-layout="false"/>
               <forms/>
@@ -365,7 +365,7 @@
                   </component>
                 </children>
               </grid>
-              <grid id="70be5" binding="PanelImportar" layout-manager="FlowLayout" hgap="5" vgap="5" flow-align="0">
+              <grid id="70be5" binding="panelImportar" layout-manager="FlowLayout" hgap="5" vgap="5" flow-align="0">
                 <constraints/>
                 <properties>
                   <background color="-1647416"/>
@@ -382,7 +382,7 @@
                   </component>
                 </children>
               </grid>
-              <grid id="bf6c9" binding="PanelNuevo" layout-manager="FlowLayout" hgap="5" vgap="5" flow-align="0">
+              <grid id="bf6c9" binding="panelNuevo" layout-manager="FlowLayout" hgap="5" vgap="5" flow-align="0">
                 <constraints/>
                 <properties>
                   <background color="-1647416"/>
@@ -399,7 +399,7 @@
                   </component>
                 </children>
               </grid>
-              <grid id="37a6c" binding="PanelAdd" layout-manager="FlowLayout" hgap="5" vgap="5" flow-align="0">
+              <grid id="37a6c" binding="panelAdd" layout-manager="FlowLayout" hgap="5" vgap="5" flow-align="0">
                 <constraints/>
                 <properties>
                   <background color="-1647416"/>
@@ -416,7 +416,7 @@
                   </component>
                 </children>
               </grid>
-              <grid id="80aa9" binding="PanelBorrar" layout-manager="FlowLayout" hgap="5" vgap="5" flow-align="0">
+              <grid id="80aa9" binding="panelBorrar" layout-manager="FlowLayout" hgap="5" vgap="5" flow-align="0">
                 <constraints/>
                 <properties>
                   <background color="-1647416"/>

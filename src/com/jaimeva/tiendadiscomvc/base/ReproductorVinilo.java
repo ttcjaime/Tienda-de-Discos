@@ -27,6 +27,6 @@ public class ReproductorVinilo extends Reproductor {
 
     @Override
     public String toString() {
-        return super.toString() + " | Selector de Velocidad: " + selectorVelocidad;
+        return "Reproductor de Vinilo | " + super.toString() + " | Selector de Velocidad: " + selectorVelocidad;
     }
 }

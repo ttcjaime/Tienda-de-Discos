@@ -7,7 +7,7 @@
     <properties/>
     <border type="none"/>
     <children>
-      <grid id="904ac" binding="PanelCabecera" layout-manager="FlowLayout" hgap="5" vgap="15" flow-align="1">
+      <grid id="904ac" binding="panelCabecera" layout-manager="FlowLayout" hgap="5" vgap="15" flow-align="1">
         <constraints border-constraint="North"/>
         <properties>
           <background color="-4942216"/>
@@ -24,7 +24,7 @@
           </component>
         </children>
       </grid>
-      <grid id="ebf87" layout-manager="FlowLayout" hgap="30" vgap="150" flow-align="1">
+      <grid id="ebf87" binding="panelCentro" layout-manager="FlowLayout" hgap="30" vgap="150" flow-align="1">
         <constraints border-constraint="Center"/>
         <properties>
           <background color="-1647416"/>
@@ -63,7 +63,7 @@
           </component>
         </children>
       </grid>
-      <grid id="b934d" layout-manager="FormLayout">
+      <grid id="b934d" binding="panelFoot" layout-manager="FormLayout">
         <constraints border-constraint="South"/>
         <properties>
           <background color="-4942216"/>

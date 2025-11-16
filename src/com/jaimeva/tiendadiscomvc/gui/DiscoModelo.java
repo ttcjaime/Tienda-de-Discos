@@ -2,7 +2,6 @@ package com.jaimeva.tiendadiscomvc.gui;
 
 import com.jaimeva.tiendadiscomvc.base.Cd;
 import com.jaimeva.tiendadiscomvc.base.Disco;
-import com.jaimeva.tiendadiscomvc.base.Reproductor;
 import com.jaimeva.tiendadiscomvc.base.Vinilo;
 import org.w3c.dom.*;
 import org.xml.sax.SAXException;
@@ -47,6 +46,10 @@ public class DiscoModelo {
             }
         }
         return false;
+    }
+
+    public void borrarDisco(Disco d) {
+        listaDisco.remove(d);
     }
 
     //exportarXML
